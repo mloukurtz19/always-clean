@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+    <header>
+        <image></image>
+        <title></title>
+    </header>
+
+    <about-section>
+        <title></title>
+        <text>Feel the difference a truly clean home makes. A spotless, welcoming space you can be proud of — without the stress. I focus on the details, work with honesty and precision, and take cleaning off your plate so you can focus on what matters most: living your life.</text>
+        <image></image>
+    </about-section>
+
+    <quote-section>
+        <google-form></google-form>
+    </quote-section>
+
+    <image-section>
+        <image>pic1.jpg</image>
+        <image>pic2.jpg</image>
+        <image>pic3.jpg</image>
+        <image>pic4.jpg</image>
+    </image-section>
+
+    <contact-me-section>
+    <!-- IMPORTANT NOTE -->
+    <!-- The ampersand character '&' is not allowed in xml -->
+    <!-- Instead replace anything that has '&' with '&amp;' -->
+        <image></image>
+        <email></email>
+        <phone></phone>
+        <social-media>
+            <image>ig-instagram-icon.png</image>
+            <link>https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw</link>
+            <handler>@always_clean_1123</handler>
+        </social-media>
+        <social-media>
+            <image>facebook-square-icon.png</image>
+            <link>https://www.facebook.com/profile.php?id=100092655759980</link>
+            <handler>(Facebook)</handler>
+        </social-media>
+    </contact-me-section>
+</website>

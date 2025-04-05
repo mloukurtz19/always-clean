@@ -1,0 +1,47 @@
+.quote-section{
+    width: 100%;
+    height: var(--section-space-total);
+    /* padding: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* display: none; */
+}
+
+#form-embed{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile{
+    display: flex;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 779px){
+    /* .quote-section{
+        height: calc(100vh - 25px - 4rem);
+    } */
+
+    #form-embed{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    iframe{
+        width: 640px;
+        height: calc(100vh - 25px - 4rem);
+    }
+}

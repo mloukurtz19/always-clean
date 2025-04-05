@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/about-me.css">
+        <link rel="stylesheet" href="Styles/business-quote.css">
+        <link rel="stylesheet" href="Styles/picture-carousel.css">
+        <link rel="stylesheet" href="Styles/contact-me.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="load_content.js"></script>
+        <script>
+            var formOpen = false;
+
+            function openForm(){
+                var image_h2 = document.getElementById("quote-button-text");
+                console.log("Current button:", image_h2.innerHTML);
+                if(formOpen){
+                    console.log("Closing form");
+                    document.getElementById("form-embed").style.display = "none";
+                    formOpen = false;
+                    image_h2.innerHTML = "Request a Quote";
+                }else{
+                    console.log("Opening form");
+                    document.getElementById("form-embed").style.display = "flex";
+                    formOpen = true;
+                    image_h2.innerHTML = "Close the Form";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Cute pictures!!! -->
+        <div class="overlay-container">
+            <img src="pictures/sponge.png" class="overlay-img img-aboutMe-bottom-left">
+            <img src="pictures/spray-bottle.png" class="overlay-img img-quote-bottom-right">
+            <img src="pictures/gloves.png" class="overlay-img img-pictures-bottom-left">
+            <img src="pictures/broom.png" class="overlay-img img-pictures-bottom-right">
+        </div>
+        <header>
+            <div class="blue-header">
+                <img src="./pictures/LogoA2.png">
+                <h1>Always Clean</h1>
+            </div>
+        </header>
+        <!-- About Me -->
+        <div id="aboutMe" class="about-me bubbles">
+            <div class="content">
+                <h2>A Clean Home = A Happy Home</h2>
+                <!-- I want you to notice the difference in your home. Great cleaning creates an inviting home you can be proud of! I believe details, honesty, and precision make the difference. Balancing work, school, and life is difficult already and cleaning becomes a hassle. I am here to relieve you of that difficulty freeing you up to enjoy life!  -->
+            </div>
+ 
+            <div class="about-img">
+                <div class="image-cropper">
+                    <img src="./pictures/Melinda2.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Quote -->
+        <div class="section white-on-blue">
+            <img src="./pictures/Decorative Line White.png" class="decorative-line">
+            <div class="quote-section">
+                <div class="mobile">
+                    <button onclick="openForm()"><h2 id="quote-button-text">Request a Quote</h2></button>
+                </div>
+                <div id="form-embed">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcd4MyDHgruzfZ0ep2tRPyBwr0MTAISrGVsVnmhZLC6G1wJg/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>          
+        </div>
+        <!-- Picture Carousel -->
+        <div class="section bubbles">
+            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">
+            <div class="img-carousel">
+                <div id="imgCarousel">
+
+                </div>
+                <!-- <img class="mySlides" src="./pictures/Placeholder_view_vector.svg.png">
+                <img class="mySlides" src="./pictures/LogoA.jpg">
+                <img class="mySlides" src="./pictures/Female_portrait_placeholder_cropped.jpg"> -->
+                <button style="left: 5px" onclick="carousel(-1)">&#10094;</button>
+                <button style="right: 5px" onclick="carousel(1)">&#10095;</button>
+            </div>
+        </div>
+        <!-- Contact Me -->
+        <div class="contact-me">
+            <div class="contact-info">
+                <div class="logo">
+                    <img src="./pictures/LogoB.png">
+                </div>
+                <div class="email-phone">
+                    <div>Email: mloukurtz19@gmail.com</div>
+                    <div>Phone: 479-276-8305</div>
+                </div>
+            </div>           
+            <div class="social-media">
+                <!-- <a href="https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank">
+                    <img src="pictures/ig-instagram-icon.png">
+                    @always_clean_1123
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100092655759980" target="_blank">
+                    <img src="pictures/facebook-square-icon.png">
+                    (Facebook)
+                </a> -->
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
