@@ -1,0 +1,67 @@
+.contact-me{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* gap: 1rem;     */
+    font-size: 0.875rem; /* 14px */
+    color: var(--alternative-white);
+    line-height: 1.6;
+    background-color: var(--primary-blue);
+    /* border-top: 4px solid var(--second-blue); */
+
+    justify-content: center;
+}
+
+.logo{
+    background-color: var(--alternative-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-me img{
+    width: 6.5rem;
+    height: auto;
+}
+
+.social-media{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.social-media img{
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.social-media a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a:link{
+    color: var(--alternative-white);
+}
+
+.email-phone{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 779px){
+    .contact-me{
+        gap: 1rem;
+    }
+}

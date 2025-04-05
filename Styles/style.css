@@ -1,0 +1,211 @@
+/* Note: 1em = 16px */
+:root{
+    --primary-blue: #669ED3;
+    /* --primary-pink: #FFAFF0; */
+    --primary-pink: #D957A0;
+    --second-pink: #FFAFF0;
+    --third-blue: #E2F1FF;
+
+    --second-blue:#0A6F9F;
+    --third-blue: #e2f1ff;
+    --alternative-green: #6EB91B;
+    --alternative-black: #302E2E;
+    --alternative-white: #FDFEFD; 
+
+    --header-height: 5em; /* Was originally 8em */
+    --remaining-space-total: calc(100svh - var(--header-height));
+    --section-spacing: 2rem;
+    --section-spacing-top: 1rem;
+    --decorative-line-height: 1.25rem;
+    --section-space-total: calc(100vh - var(--section-spacing) - var(--section-spacing-top) - var(--decorative-line-height) - 0.5rem);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: var(--alternative-white);
+
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+h1{
+    font-family: "Grandstander", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.75em;
+    margin: 0;
+    color: var(--primary-pink);
+}
+
+h2{
+    margin: 0;
+    color: var(--primary-pink);
+    font-size: 1.375rem;
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--alternative-white);
+    color: var(--alternative-black);
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+    scrollbar-color: transparent;
+    text-align: justify;
+    
+}
+
+div{
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.white-on-blue{
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+/* .white-on-blue{
+    background-image: url('../pictures/Bubbles.png'), url('../pictures/Bubbles2.png');
+    background-size: 28rem, 11rem;
+} */
+
+.section{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: var(--section-spacing);
+    padding-top: var(--section-spacing-top);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    gap: 0.5rem;
+}
+
+.decorative-line{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: var(--decorative-line-height);
+    /* margin-bottom: 5px; */
+}
+
+.bubbles{
+    background-image: url('../pictures/Bubbles.png'), url('../pictures/Bubbles2.png');
+    background-attachment: fixed; /* Creates Parallax Effect (scrolling effect) */
+    background-size: 28rem, 11rem;
+    position: relative;
+    z-index: 1;
+}
+
+.bubbles::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .8) 70%);
+    /* background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 30%, rgba(102, 158, 211, .8) 70%); */
+    z-index: -1;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--alternative-white);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-pink);
+    border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    /* background-color: var(--primary-pink); */
+    cursor: pointer;
+}
+
+/* Cute images!!! */
+.overlay-container{
+    position: relative;
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    pointer-events: none;
+    z-index: 999;
+}
+
+.overlay-img {
+    position: absolute;
+    width: 6rem; /* or whatever size you want */
+    pointer-events: none; /* so they don't block clicks */
+    transform: translateY(-100%)
+}
+
+.img-aboutMe-bottom-left{
+    top: calc(100vh - 2rem);
+    left: 2rem;
+}
+
+.img-quote-bottom-right{
+    top: calc(200vh - 2rem);
+    right: 0;
+    width: 20rem;
+    max-width: calc((100vw - 640px)/2);
+}
+
+.img-pictures-bottom-left{
+    top: calc(300vh + 3rem);
+    left: 2rem;
+    width: 10rem;
+}
+
+.img-pictures-bottom-right{
+    top: calc(300vh + 3rem);
+    right: 2rem;
+    width: 15rem;
+}
+
+@media (min-width: 768px){
+    html, body{
+        text-align: left;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+        text-align: left;
+    }
+
+    div{
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+
+    .section{
+        height: 100vh;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+}
