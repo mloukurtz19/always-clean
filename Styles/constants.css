@@ -1,0 +1,24 @@
+/* Note: 1em = 16px */
+:root{
+    --primary-blue: #669ED3;
+    /* --primary-pink: #FFAFF0; */
+    --primary-pink: #D957A0;
+    --second-pink: #FFAFF0;
+    --third-blue: #E2F1FF;
+
+    --second-blue:#0A6F9F;
+    --third-blue: #e2f1ff;
+    --alternative-green: #6EB91B;
+    --alternative-black: #302E2E;
+    --alternative-white: #FDFEFD; 
+
+    --header-height: 5em; /* Was originally 8em */
+    --remaining-space-total: calc(100svh - var(--header-height));
+    --section-spacing: 2rem;
+    --section-spacing-top: 1rem;
+    --decorative-line-height: 1.25rem;
+    --section-space-total: calc(100vh - var(--section-spacing) - var(--section-spacing-top) - var(--decorative-line-height) - 0.5rem);
+
+    --tablet-breakpoint: 767px;
+    --desktop-breakpoint: 1023px;
+}

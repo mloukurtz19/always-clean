@@ -1,24 +1,4 @@
-/* Note: 1em = 16px */
-:root{
-    --primary-blue: #669ED3;
-    /* --primary-pink: #FFAFF0; */
-    --primary-pink: #D957A0;
-    --second-pink: #FFAFF0;
-    --third-blue: #E2F1FF;
-
-    --second-blue:#0A6F9F;
-    --third-blue: #e2f1ff;
-    --alternative-green: #6EB91B;
-    --alternative-black: #302E2E;
-    --alternative-white: #FDFEFD; 
-
-    --header-height: 5em; /* Was originally 8em */
-    --remaining-space-total: calc(100svh - var(--header-height));
-    --section-spacing: 2rem;
-    --section-spacing-top: 1rem;
-    --decorative-line-height: 1.25rem;
-    --section-space-total: calc(100vh - var(--section-spacing) - var(--section-spacing-top) - var(--decorative-line-height) - 0.5rem);
-}
+@import url(constants.css);
 
 button{
     cursor: pointer;
@@ -72,6 +52,7 @@ div{
 }
 
 .white-on-blue{
+    padding: 0.5rem !important;
     background-color: var(--primary-blue);
     color: white;
 }
@@ -160,10 +141,10 @@ div{
 }
 
 .img-aboutMe-bottom-left{ /* Sponge */
-    left: 2rem;
 
-    top: calc(100svh + 2rem);
-    transform: translateY(0);
+    right: 1rem;
+    top: calc(100svh + 200vh);
+    /* transform: translateY(0); */
 }
 
 .img-quote-bottom-right{ /* Spray Bottle */
@@ -173,7 +154,7 @@ div{
     /* max-width: calc((100vw - 640px)/2); */
 
     right: 0;
-    top: calc(100svh + 50vh + 3.375rem + 1rem);
+    top: calc(100svh + 50vh + 3.375rem + 2rem);
     transform: translateX(0);
     width: 50vw;
 
@@ -202,7 +183,7 @@ div{
     display: none;
 }
 
-@media (min-width: 768px){
+@media (min-width: 1023px){
     html, body{
         text-align: left;
     }
@@ -212,7 +193,7 @@ div{
     }
 
     h2{
-        font-size: 1.75rem;
+        font-size: 2rem;
         text-align: left;
     }
 
@@ -225,13 +206,16 @@ div{
         height: 100vh;
     }
 
-    h2{
-        font-size: 2rem;
+    .white-on-blue{
+        padding: 0;
     }
 
     /* Cute Pictures!!! */
     .img-aboutMe-bottom-left{ /* Sponge */
+        right: auto;
+        left: 2rem;
         top: calc(100svh - 2rem);
+        transform: translateY(-100%);
     }
 
     .img-quote-bottom-right{ /* Spray Bottle */
