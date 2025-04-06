@@ -1,40 +1,74 @@
+<!-- Hello, I hope you are having a great day! -->
+<!-- This document allows you to edit the text, pictures, and links on your website -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <website>
+    <!-- The following contains the information for the header, which is on the very -->
+    <!-- top of the page. -->
     <header>
+        <!-- To change logo: Upload picture to the 'pictures' folder and place the name -->
+        <!-- of the image below -->
         <image>LogoA2.png</image>
+        <!-- To change the title of your website simply edit the text below -->
         <title>Always Clean</title>
     </header>
 
+    <!-- The following contians the information for the About Me section of the website, -->
+    <!-- which is the first section displayed just under the header. -->
     <about-section>
+        <!-- To change the title of the About Me section (Has a pink font color) edit the below text -->
         <title>A Clean Home = A Happy Home</title>
+        <!-- To change the About Me section text edit the following below -->
         <text>Feel the difference a truly clean home makes. A spotless, welcoming space you can be proud of — without the stress. I focus on the details, work with honesty and precision, and take cleaning off your plate so you can focus on what matters most: living your life.</text>
+        <!-- To change the picture begin by uploading the picture to the 'pictures' folder. -->
+        <!-- Then replace the text below with the file name of the picture -->
         <image>IMG_3125.jpeg</image>
     </about-section>
 
+    <!-- The following contains the information for the Business Quote section. (The Google Form) -->
     <quote-section>
+        <!-- Edit the form in Google Forms -->
+        <!-- Note: If using entirely different form you will need to get the embed code. -->
         <google-form><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_GmqNOK1Zvp-XgcZ0zbYx4-UCAD5dyzr1J--KSDhKdS77zA/viewform?embedded=true" width="640" height="1529" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></google-form>
     </quote-section>
 
+    <!-- The following contains the pictures for the Picture Carousel/Slideshow -->
     <image-section>
+        <!-- To add a picture begin by uploading the picture to the 'img-carousel' folder, -->
+        <!-- which can be found under the 'pictures' folder. Then, add the following: -->
+        <!-- <image>file-name-of-your-image.png</image> -->
+
+        <!-- To remove a picture delete the image with the picture's file name: <image>...</image> -->
         <image>pic1.jpg</image>
         <image>pic2.jpg</image>
         <image>IMG_2714.jpeg</image>
         <image>polish_save.jpeg</image>
     </image-section>
 
+    <!-- The following contains the information for the Contact Me section. -->
     <contact-me-section>
     <!-- IMPORTANT NOTE -->
     <!-- The ampersand character '&' is not allowed in xml -->
     <!-- Instead replace anything that has '&' with '&amp;' -->
+        <!-- Below is the logo image (follow previous instructions for changing) -->
         <image>LogoB.png</image>
+        <!-- Below is the email and can be changed by editing the text below -->
         <email>mloukurtz19@gmail.com</email>
+        <!-- Below is the phone number and can be changed by editing the text below -->
         <phone>479-276-8305</phone>
+        <!-- The following are the social media links -->
         <social-media>
-            <image>ig-instagram-icon.png</image>
+            <!-- Instagram -->
+            <image>ig-instagram-icon.png</image> <!-- This is the instagram picture. Follow previous instructions to change -->
+            <!-- Below is the link to your Instagram page -->
+            <!-- To modify the link change the text below and replace any '&' in the url with '&amp;' -->
             <link>https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw</link>
+            <!-- This is the text displayed beneath the image and can be modified by changing the text below -->
             <handler>@always_clean_1123</handler>
         </social-media>
         <social-media>
+            <!-- Facebook -->
+            <!-- Same instructions as Instagram -->
             <image>facebook-square-icon.png</image>
             <link>https://www.facebook.com/profile.php?id=100092655759980</link>
             <handler>(Facebook)</handler>
