@@ -160,17 +160,17 @@ div{
 }
 
 .img-aboutMe-bottom-left{
-    top: calc(100vh - 2rem);
+    top: calc(100svh - 2rem);
     left: 2rem;
 }
 
 .img-quote-bottom-right{ /* Spray Bottle */
-    top: calc(200vh - 2rem);
-    right: 0;
+    /* top: calc(100svh + 100vh - 2rem);
+    right: 0; */
     /* width: 20rem; */
     /* max-width: calc((100vw - 640px)/2); */
 
-    top: calc(150vh + 3.375rem + 1rem);
+    top: calc(100svh + 50vh + 3.375rem + 1rem);
     transform: translateX(0);
     width: 50vw;
 
@@ -181,7 +181,7 @@ div{
     left: 2rem;
     width: 10rem; */
 
-    top: calc(150vh - 3.375rem);
+    top: calc(100svh + 50vh - 3.375rem - 1rem);
     transform: translateY(-100%) translateX(-1rem) rotate(120deg);
     left: 2rem;
     width: 10rem;
@@ -196,7 +196,7 @@ div{
 }
 
 .img-quote-bottom-left{
-    top: 200vh;
+    top: calc(100svh + 100vh);
     left: 2rem;
     width: 15rem;
 
