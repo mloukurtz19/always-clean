@@ -149,7 +149,6 @@ div{
     height: 100%; */
     pointer-events: none;
     z-index: 999;
-    display: none;
 }
 
 .overlay-img {
@@ -157,7 +156,7 @@ div{
     width: 6rem; /* or whatever size you want */
     pointer-events: none; /* so they don't block clicks */
     transform: translateY(-100%);
-    max-width: calc((100vw - 640px)/2);
+    /* max-width: calc((100vw - 640px)/2); */
 }
 
 .img-aboutMe-bottom-left{
@@ -165,23 +164,43 @@ div{
     left: 2rem;
 }
 
-.img-quote-bottom-right{
+.img-quote-bottom-right{ /* Spray Bottle */
     top: calc(200vh - 2rem);
     right: 0;
-    width: 20rem;
-    max-width: calc((100vw - 640px)/2);
+    /* width: 20rem; */
+    /* max-width: calc((100vw - 640px)/2); */
+
+    top: calc(150vh + 3.375rem + 1rem);
+    transform: translateX(0);
+    width: 50vw;
+
 }
 
-.img-pictures-bottom-left{
-    top: calc(300vh + 3rem);
+.img-pictures-bottom-left{ /* Gloves */
+    /* top: calc(300vh + 3rem);
+    left: 2rem;
+    width: 10rem; */
+
+    top: calc(150vh - 3.375rem);
+    transform: translateY(-100%) translateX(-1rem) rotate(120deg);
     left: 2rem;
     width: 10rem;
 }
 
-.img-pictures-bottom-right{
-    top: calc(300vh + 3rem);
-    right: 2rem;
+.img-pictures-bottom-right{ /* Broom */
     width: 15rem;
+
+    top: 200vh;
+    left: 1rem;
+    transform: scale(-1, 1) translateY(-100%) rotate(-10deg);
+}
+
+.img-quote-bottom-left{
+    top: 200vh;
+    left: 2rem;
+    width: 15rem;
+
+    display: none;
 }
 
 @media (min-width: 768px){
@@ -211,7 +230,30 @@ div{
         font-size: 2rem;
     }
 
-    .overlay-container{
+    /* Cute Pictures!!! */
+    .img-quote-bottom-right{ /* Spray Bottle */
+        top: calc(200vh - 2rem);
+        right: 0;
+        width: 20rem;
+        max-width: calc((100vw - 640px)/2);
+    
+        transform: translateY(-100%);
+    
+    }
+    
+    .img-pictures-bottom-left{ /* Gloves */
+        top: calc(300vh + 3rem);
+        transform: translateY(-100%);
+    }
+
+    .img-pictures-bottom-right{ /* Broom */
+        top: calc(300vh + 3rem);
+        left: auto;
+        right: 0;
+        transform: translateY(-100%);
+    }
+
+    .img-quote-bottom-left{
         display: flex;
     }
 }
