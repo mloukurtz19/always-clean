@@ -24,7 +24,7 @@ header img{
     background-color: var(--alternative-white);
 }
 
-@media (min-width: 1023px){
+@media (min-width: 768px){
     header{
         position: sticky;
         top: 0;

@@ -62,7 +62,7 @@
     flex-direction: column;
 }
 
-@media (min-width: 1023px){
+@media (min-width: 768px){
     .contact-me{
         gap: 1rem;
     }

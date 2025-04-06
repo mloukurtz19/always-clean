@@ -60,7 +60,7 @@
     /* padding-right: 4rem; */
 }
 
-@media (min-width: 1023px){
+@media (min-width: 768px){
     .about-me{
         height: var(--remaining-space-total);
         padding-top: 2rem;

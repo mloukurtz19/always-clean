@@ -27,7 +27,7 @@ iframe{
     height: 100%;
 }
 
-@media (min-width: 1023px){
+@media (min-width: 768px){
     /* .quote-section{
         height: calc(100vh - 25px - 4rem);
     } */
