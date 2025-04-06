@@ -159,9 +159,10 @@ div{
     /* max-width: calc((100vw - 640px)/2); */
 }
 
-.img-aboutMe-bottom-left{
-    top: calc(100svh - 2rem);
+.img-aboutMe-bottom-left{ /* Sponge */
     left: 2rem;
+
+    top: calc(100svh + 2rem);
 }
 
 .img-quote-bottom-right{ /* Spray Bottle */
@@ -173,7 +174,7 @@ div{
     right: 0;
     top: calc(100svh + 50vh + 3.375rem + 1rem);
     transform: translateX(0);
-    width: 50vw;
+    width: 49vw;
 
 }
 
@@ -189,7 +190,7 @@ div{
 }
 
 .img-pictures-bottom-right{ /* Broom */
-    width: 50vw;
+    width: 49vw;
     top: 200vh;
     left: 1rem;
     transform: scale(-1, 1) translateY(-100%) rotate(-10deg);
@@ -231,6 +232,10 @@ div{
     }
 
     /* Cute Pictures!!! */
+    .img-aboutMe-bottom-left{ /* Sponge */
+        top: calc(100svh - 2rem);
+    }
+
     .img-quote-bottom-right{ /* Spray Bottle */
         top: calc(200vh - 2rem);
         right: 0;
