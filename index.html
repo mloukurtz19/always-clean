@@ -26,11 +26,17 @@
                     document.getElementById("form-embed").style.display = "none";
                     formOpen = false;
                     image_h2.innerHTML = "Request a Quote";
+
+                    document.getElementsByClassName("img-quote-bottom-right")[0].style.display = "block";
+                    document.getElementsByClassName("img-pictures-bottom-left")[0].style.display = "block";
                 }else{
                     console.log("Opening form");
                     document.getElementById("form-embed").style.display = "flex";
                     formOpen = true;
                     image_h2.innerHTML = "Close the Form";
+
+                    document.getElementsByClassName("img-quote-bottom-right")[0].style.display = "none";
+                    document.getElementsByClassName("img-pictures-bottom-left")[0].style.display = "none";
                 }
             }
         </script>
