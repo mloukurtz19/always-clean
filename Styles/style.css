@@ -170,6 +170,7 @@ div{
     /* width: 20rem; */
     /* max-width: calc((100vw - 640px)/2); */
 
+    right: 0;
     top: calc(100svh + 50vh + 3.375rem + 1rem);
     transform: translateX(0);
     width: 50vw;
@@ -188,8 +189,7 @@ div{
 }
 
 .img-pictures-bottom-right{ /* Broom */
-    width: 15rem;
-
+    width: 50vw;
     top: 200vh;
     left: 1rem;
     transform: scale(-1, 1) translateY(-100%) rotate(-10deg);
@@ -247,6 +247,7 @@ div{
     }
 
     .img-pictures-bottom-right{ /* Broom */
+        width: 15rem;
         top: calc(300vh + 3rem);
         left: auto;
         right: 0;
