@@ -149,13 +149,15 @@ div{
     height: 100%; */
     pointer-events: none;
     z-index: 999;
+    display: none;
 }
 
 .overlay-img {
     position: absolute;
     width: 6rem; /* or whatever size you want */
     pointer-events: none; /* so they don't block clicks */
-    transform: translateY(-100%)
+    transform: translateY(-100%);
+    max-width: calc((100vw - 640px)/2);
 }
 
 .img-aboutMe-bottom-left{
@@ -207,5 +209,9 @@ div{
 
     h2{
         font-size: 2rem;
+    }
+
+    .overlay-container{
+        display: flex;
     }
 }
