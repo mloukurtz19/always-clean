@@ -2,9 +2,11 @@ var slideIndex = 0;
 let formObject = {};
 let chosenPackage;
 
-document.getElementById("imgCarousel").onload = () => {
-    carousel();
-}
+// document.getElementById("imgCarousel").onload = () => {
+//     carousel();
+// }
+
+carousel();
 
 // Function to control carousel (auto and manual)
 function carousel(click = 0) {
