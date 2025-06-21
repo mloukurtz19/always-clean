@@ -10,6 +10,7 @@ carousel();
 
 // Function to control carousel (auto and manual)
 function carousel(click = 0) {
+    console.log("Carousel called");
     let slides = document.getElementsByClassName("mySlides");
 
     // Hide all images
