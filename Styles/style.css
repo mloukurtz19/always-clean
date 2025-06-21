@@ -77,7 +77,9 @@ div{
 
 .decorative-line{
     display: block;
-    margin: auto;
+    margin: 0.625rem;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
     height: var(--decorative-line-height);
     /* margin-bottom: 5px; */
@@ -141,9 +143,12 @@ div{
 }
 
 .img-aboutMe-bottom-left{ /* Sponge */
-
+    /* display: none; */
     right: 1rem;
-    top: calc(100svh + 200vh);
+    top: calc(100vh + 1rem);
+    /* top: 300vh; */
+    /* bottom: 4rem; */
+    /* top: calc(100svh + 200vh); */
     /* transform: translateY(0); */
 }
 
@@ -157,7 +162,7 @@ div{
     top: calc(100svh + 50vh + 3.375rem + 2rem);
     transform: translateX(0);
     width: 50vw;
-
+    display: none;
 }
 
 .img-pictures-bottom-left{ /* Gloves */
@@ -165,9 +170,10 @@ div{
     left: 2rem;
     width: 10rem; */
 
-    top: calc(100svh + 50vh - 3.375rem - 1rem);
+    /* top: calc(100svh + 50vh - 3.375rem - 1rem); */
+    bottom: 1rem;
     /* transform: translateY(-100%) translateX(-1rem) rotate(120deg); */
-    transform: translateY(-100%) translateX(-1rem);
+    /* transform: translateY(-100%) translateX(-1rem); */
     left: 2rem;
     width: 10rem;
 }
@@ -181,6 +187,20 @@ div{
     left: 2rem;
     width: 15rem;
     display: none;
+}
+
+.gloves{
+    display: none;
+}
+
+.broom{
+    display: none;
+}
+
+.carousel-decor{
+    position: relative;
+    z-index: 999;
+    pointer-events: none;
 }
 
 @media (min-width: 767px) and (max-width: 1024px){
@@ -224,6 +244,7 @@ div{
 
     /* Cute Pictures!!! */
     .img-aboutMe-bottom-left{ /* Sponge */
+        display: block;
         right: auto;
         left: 2rem;
         top: calc(100svh - 2rem);
@@ -231,7 +252,9 @@ div{
     }
 
     .img-quote-bottom-right{ /* Spray Bottle */
-        top: calc(200vh - 2rem);
+        /* top: calc(200vh - 2rem); */
+        /* bottom: 1rem; */
+        display: block;
         right: 0;
         width: 20rem;
         max-width: calc((100vw - 640px)/2);
@@ -241,8 +264,10 @@ div{
     }
     
     .img-pictures-bottom-left{ /* Gloves */
-        top: calc(300vh + 3rem);
-        transform: translateY(-100%);
+        /* top: calc(300vh + 3rem); */
+        display: block;
+        bottom: 1rem;
+        /* transform: translateY(-100%); */
     }
 
     .img-pictures-bottom-right{ /* Broom */
@@ -252,6 +277,22 @@ div{
         left: auto;
         right: 0;
         transform: translateY(-100%);
+    }
+
+    .gloves{
+        display: block;
+        position: absolute;
+        width: 10rem;
+        left: 0;
+        bottom: 1rem;
+    }
+    
+    .broom{
+        display: block;
+        position: absolute;
+        width: 15rem;
+        right: 0;
+        bottom: 1rem;
     }
 
     .img-quote-bottom-left{ /* Detergent */
