@@ -2,11 +2,25 @@ var slideIndex = 0;
 let formObject = {};
 let chosenPackage;
 
-window.onload = () => {
-    carousel();
+function waitForImagesToLoad() {
+    const images = Array.from(document.images);
+    const imagePromises = images.map(img => {
+        if (img.complete) {
+        return Promise.resolve(); // already loaded
+        }
+
+        return new Promise((resolve, reject) => {
+        img.onload = () => resolve();
+        img.onerror = () => reject();
+        });
+    });
+
+    return Promise.all(imagePromises);
 }
 
-// carousel();
+waitForImagesToLoad().then(() => {
+    carousel();
+});
 
 // Function to control carousel (auto and manual)
 function carousel(click = 0) {
