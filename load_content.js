@@ -50,13 +50,13 @@ fetch("content.xml")
             aboutMe_img.src = "./pictures/" + content_aboutMe_img;
         }
 
-        // Quote Section
-        const form_html_element = document.getElementById("form-embed");
-        var content_form = quote_section.getElementsByTagName("google-form")[0].innerHTML;
+        // // Quote Section
+        // const form_html_element = document.getElementById("form-embed");
+        // var content_form = quote_section.getElementsByTagName("google-form")[0].innerHTML;
 
-        if(content_form.length > 0){
-            form_html_element.innerHTML = content_form;
-        }
+        // if(content_form.length > 0){
+        //     form_html_element.innerHTML = content_form;
+        // }
 
         // Image Carousel
         const carousel_html_element = document.getElementById("imgCarousel");
