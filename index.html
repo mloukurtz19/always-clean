@@ -86,6 +86,7 @@
                                 <li>Wipe down kitchen appliances and sink</li>
                                 <li>Window panes and window sills</li>
                                 <li>Clean bathrooms</li>
+                                <li>Clean ceiling fans</li>
                             </ul>
                             <button onclick="formContinuation(2, ['Basic Clean'])">Select</button>
                         </div>
@@ -129,6 +130,10 @@
                                     Clean bathrooms</li>
                                 <li><input type="checkbox" name="customPackage" value="Window blinds">
                                     Window blinds</li>
+                                <li><input type="checkbox" name="customPackage" value="Walls">
+                                    Walls</li>
+                                <li><input type="checkbox" name="customPackage" value="Clean ceiling fans">
+                                    Clean ceiling fans</li>
                             </ul>
 
                             <ul style="list-style-type:none">
@@ -144,8 +149,8 @@
                                     Inside and outside kitchen appliances</li>
                                 <li><input type="checkbox" name="customPackage" value="Under couch and chair cushions">
                                     Under couch and chair cushions</li>
-                                <li><input type="checkbox" name="customPackage" value="Doors and walls">
-                                    Doors and walls</li>
+                                <li><input type="checkbox" name="customPackage" value="Doors">
+                                    Doors</li>
                             </ul>
                         </div>                    
                         <button onclick="ensureValidity(checkboxesChosen('customPackage'))">Select</button>
