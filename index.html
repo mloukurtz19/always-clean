@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="Styles/styling.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,9 @@
         <link rel="stylesheet" href="Styles/business-quote.css">
         <link rel="stylesheet" href="Styles/picture-carousel.css">
         <link rel="stylesheet" href="Styles/contact-me.css">
+
+        <link rel="icon" href="pictures/LogoA.jpg">
+        <title>Always Clean</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="load_content.js"></script>
@@ -58,20 +62,23 @@
         </header>
         <!-- About Me -->
         <div id="aboutMe" class="about-me bubbles">
-            <div class="content">
-                <h2>A Clean Home = A Happy Home</h2>
-                <!-- I want you to notice the difference in your home. Great cleaning creates an inviting home you can be proud of! I believe details, honesty, and precision make the difference. Balancing work, school, and life is difficult already and cleaning becomes a hassle. I am here to relieve you of that difficulty freeing you up to enjoy life!  -->
-            </div>
- 
             <div class="about-img">
                 <div class="image-cropper">
-                    <img src="./pictures/Melinda2.jpg">
+                    <img src="IMG_3125">
                 </div>
             </div>
+
+            <div>
+                <h2>A Clean Home = A Happy Home</h2>
+                <div class="content"></div>
+                <!-- I want you to notice the difference in your home. Great cleaning creates an inviting home you can be proud of! I believe details, honesty, and precision make the difference. Balancing work, school, and life is difficult already and cleaning becomes a hassle. I am here to relieve you of that difficulty freeing you up to enjoy life!  -->
+                <button onclick="goToQuote()">Get a Quote!</button>
+            </div>
+            
         </div>
         <!-- Quote -->
-        <div class="section white-on-blue">
-            <img src="./pictures/Decorative Line White.png" class="decorative-line">
+        <div class="section white-on-blue" id="quoteSection">
+            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">
             <div class="quote-section">
                 <h2>Request a Quote</h2>
                 <div class="step1">
@@ -116,41 +123,105 @@
                         <h3>Create Your Own!</h3>
                         <div class="multiList" style="justify-content: center;">
                             <ul style="list-style-type:none">
-                                <li><input type="checkbox" name="customPackage" value="Replace trash bags">
-                                    Replace trash bags</li>
-                                <li><input type="checkbox" name="customPackage" value="Declutter and organize">
-                                    Declutter and organize</li>
-                                <li><input type="checkbox" name="customPackage" value="Vacuum/sweep and mop">
-                                    Vacuum/sweep and mop</li>
-                                <li><input type="checkbox" name="customPackage" value="Wipe down kitchen appliances and sink">
-                                    Wipe down kitchen appliances and sink</li>
-                                <li><input type="checkbox" name="customPackage" value="Window panes, sills, and tracks">
-                                    Window panes, sills, and tracks</li>
-                                <li><input type="checkbox" name="customPackage" value="Clean bathrooms">
-                                    Clean bathrooms</li>
-                                <li><input type="checkbox" name="customPackage" value="Window blinds">
-                                    Window blinds</li>
-                                <li><input type="checkbox" name="customPackage" value="Clean ceiling fans">
-                                    Clean ceiling fans</li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Replace trash bags">
+                                        Replace trash bags
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Declutter and organize">
+                                        Declutter and organize
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Vacuum/sweep and mop">
+                                        Vacuum/sweep and mop
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Wipe down kitchen appliances and sink">
+                                        Wipe down kitchen appliances and sink
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Window panes, sills, and tracks">
+                                        Window panes, sills, and tracks
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Clean bathrooms">
+                                        Clean bathrooms
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Window blinds">
+                                        Window blinds
+                                    </label>                                    
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Clean ceiling fans">
+                                        Clean ceiling fans
+                                    </label>
+                                </li>
                             </ul>
 
                             <ul style="list-style-type:none">
-                                <li><input type="checkbox" name="customPackage" value="Insides of all cabinets">
-                                    Insides of all cabinets</li>
-                                <li><input type="checkbox" name="customPackage" value="Clean shower heads">
-                                    Clean shower heads</li>
-                                <li><input type="checkbox" name="customPackage" value="Remove soap-scum and limescale">
-                                    Remove soap-scum and limescale</li>
-                                <li><input type="checkbox" name="customPackage" value="Under furniture">
-                                    Under furniture</li>
-                                <li><input type="checkbox" name="customPackage" value="Inside and outside kitchen appliances">
-                                    Inside and outside kitchen appliances</li>
-                                <li><input type="checkbox" name="customPackage" value="Under couch and chair cushions">
-                                    Under couch and chair cushions</li>
-                                <li><input type="checkbox" name="customPackage" value="Doors">
-                                    Doors</li>                                
-                                <li><input type="checkbox" name="customPackage" value="Walls">
-                                    Walls</li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Insides of all cabinets">
+                                        Insides of all cabinets
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Clean shower heads">
+                                        Clean shower heads
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Remove soap-scum and limescale">
+                                        Remove soap-scum and limescale
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Under furniture">
+                                        Under furniture
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Inside and outside kitchen appliances">
+                                        Inside and outside kitchen appliances
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Under couch and chair cushions">
+                                        Under couch and chair cushions
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Doors">
+                                        Doors
+                                    </label>
+                                </li>                                
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="customPackage" value="Walls">
+                                        Walls
+                                    </label>
+                                </li>
                             </ul>
                         </div>                    
                         <button onclick="ensureValidity(checkboxesChosen('customPackage'))">Select</button>
@@ -195,13 +266,13 @@
                                     <input id="bedroomQuantity_Input" type="number" name="bedroomQuantity" required>
                                 </div>
                                 <div id="bathroomQtyForm">
-                                    <label>Bathroom Quantity</label>
-                                    <p class="errorMessage">I am sorry, however, this is not possible</p>
+                                    <label>Bathroom Quantity <p class="errorMessage">I am sorry, however, this is not possible</p></label>
+                                    <!-- <p class="errorMessage">I am sorry, however, this is not possible</p> -->
                                     <input id="bathroomQuantity_Input" type="number" name="bathroomQuantity" required>
                                 </div>
                                 <div id="phoneNumberForm">
-                                    <label>Phone (Optional) - Numbers only</label>
-                                    <p class="errorMessage">Please enter a valid phone number</p>
+                                    <label>Phone (Optional) - Numbers only <p class="errorMessage">Please enter a valid phone number</p></label>
+                                    <!-- <p class="errorMessage">Please enter a valid phone number</p> -->
                                     <input id="phoneNmbr_Input" type="number" name="phoneNmbr">
                                 </div>
                                 <div id="commentsForm">
@@ -246,11 +317,12 @@
                         </div>
                     </div> 
                 </form>                         
-            </div>          
+            </div>
+            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">          
         </div>
         <!-- Picture Carousel -->
-        <div class="section bubbles">
-            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">
+        <div class="bubbles">
+            
             <div class="img-carousel">
                 <div id="imgCarousel">
                     <!-- The images are injected here for the carousel -->

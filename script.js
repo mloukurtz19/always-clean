@@ -2,6 +2,11 @@ var slideIndex = 0;
 let formObject = {};
 let chosenPackage;
 
+function goToQuote(){
+    let quoteSection = document.getElementById("quoteSection");
+    quoteSection.scrollIntoView();
+}
+
 function waitForImagesToLoad() {
     const images = Array.from(document.images);
     const imagePromises = images.map(img => {
@@ -174,7 +179,6 @@ function formContinuation(step, packageSelected="", previous = false){
             }
             
             document.getElementById("packageSelected").appendChild(packageDiv);
-            // document.getElementById("packageSelected").innerHTML = formDetails.packageChosen;
 
             document.getElementById("email").innerHTML = formDetails.email;
             document.getElementById("firstName").innerHTML = formDetails.fName;
