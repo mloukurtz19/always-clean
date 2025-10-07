@@ -1,7 +1,8 @@
 @import url(constants.css);
 
 .about-me{
-    height: calc(100svh - (var(--header-height) + 1.75em) - 2.5rem);
+    /* height: calc(100svh - (var(--header-height) + 1.75em) - 2.5rem); */
+    height: calc(100svh - 80px);
     width: 100%;
     display: flex;
     align-items: center;
@@ -88,7 +89,7 @@
 
 @media (min-width: 768px){
     .about-me{
-        height: var(--remaining-space-total);
+        /* height: var(--remaining-space-total); */
         padding-top: 2rem;
     }
 
@@ -120,5 +121,9 @@
         flex-direction: column-reverse;
         justify-content: space-around;
         gap: 0;
+    }
+
+    .about-me div:nth-child(2){
+        gap: 1rem;
     }
 }

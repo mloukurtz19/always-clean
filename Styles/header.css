@@ -8,6 +8,7 @@ header{
     justify-content: center;
     z-index: 1000;
     box-sizing: border-box;
+    position: relative;
 }
 
 header img{
