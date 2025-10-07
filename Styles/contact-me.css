@@ -5,12 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    /* gap: 1rem;     */
     font-size: 0.875rem; /* 14px */
     color: var(--alternative-white);
     line-height: 1.6;
-    background-color: var(--primary-blue);
-    /* border-top: 4px solid var(--second-blue); */
+    background-color: var(--second-blue);
 
     justify-content: center;
 }
