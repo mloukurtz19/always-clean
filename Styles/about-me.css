@@ -131,6 +131,7 @@
     }
 }
 
+/* Only display button on desktop and certain mobile devices */
 @media (max-height: 750px) and (max-width: 480px){
     .about-me div:nth-child(2) button{
         display: none;
