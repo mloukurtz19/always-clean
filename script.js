@@ -3,7 +3,7 @@ let formObject = {};
 let chosenPackage;
 
 function goToQuote(){
-    let quoteSection = document.getElementById("quoteSection");
+    let quoteSection = document.getElementById("Form");
     quoteSection.scrollIntoView();
 }
 

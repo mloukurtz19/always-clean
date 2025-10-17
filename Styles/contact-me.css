@@ -6,20 +6,20 @@
     align-items: center;
     justify-content: start;
     font-size: 0.875rem; /* 14px */
-    color: var(--alternative-white);
+    color: var(--white);
     line-height: 1.6;
-    background-color: var(--second-blue);
+    background-color: var(--blue-text);
 
     justify-content: center;
 }
 
-.logo{
-    background-color: var(--alternative-white);
+/* .logo{
+    background-color: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .contact-info{
     display: flex;
@@ -52,7 +52,7 @@
 }
 
 .social-media a:link{
-    color: var(--alternative-white);
+    color: var(--white);
 }
 
 .email-phone{

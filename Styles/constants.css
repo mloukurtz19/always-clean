@@ -1,7 +1,18 @@
 /* Note: 1em = 16px */
 :root{
-    --primary-blue: #669ED3;
-    /* --primary-pink: #FFAFF0; */
+    --pink: #D957A0;
+    --pink-text: #BF2B7F;
+
+    --blue: #C4F5FF;
+    --blue-text: #0A6F9F;
+
+    --white: #FDFEFD;
+    --gray: #F5F5F5;
+
+    --green: #53B021;
+
+    /* --primary-blue: #669ED3;
+    --primary-pink: #FFAFF0;
     --primary-pink: #D957A0;
     --second-pink: #FFAFF0;
     --third-blue: #E2F1FF;
@@ -11,9 +22,9 @@
     --third-blue: #e2f1ff;
     --alternative-green: #6EB91B;
     --alternative-black: #302E2E;
-    --alternative-white: #FDFEFD; 
+    --alternative-white: #FDFEFD;  */
 
-    --header-height: 5em; /* Was originally 8em */
+    --header-height: 4.25em; /* Was originally 8em */
     --remaining-space-total: calc(100svh - var(--header-height));
     --section-spacing: 2rem;
     --section-spacing-top: 1rem;
