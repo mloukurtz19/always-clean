@@ -232,19 +232,19 @@ header img{
     gap: 1rem;
 }
 
-#Services .card .content .service{
+.service{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
 }
 
-#Services .service ul{
+.service ul{
     padding-left: 1rem;
     line-height: 1.5rem;
 }
 
-#Services .card .content .service .title{
+.service .title{
     display: flex;
     flex-direction: column;
 
@@ -254,25 +254,25 @@ header img{
     font-weight: bold;
 }
 
-#Services .card .content .service .title div{
+.service .title div{
     height: 90px;
     width: 90px;
     position: relative;
 }
 
-#Services .service .title div img, #Services .card .circle{
+.service .title div img, #Services .card .circle{
     position: absolute;
     top: 0;
     left: 0;
 }
 
-#Services .service .title div img{
+.service .title div img{
     z-index: 2;
     height: 90px;
     width: 90px;
 }
 
-#Services .card .circle{
+.service .circle{
     z-index: 1;
     height: 90px;
     width: 90px;
@@ -506,4 +506,39 @@ input.error:focus-visible{
     justify-content: center;
 
     gap: 2rem;
+}
+
+/* Popup */
+#Popup{
+    width: 100svw;
+    height: 100svh;
+    background:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    z-index: 6666;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#Popup .container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#Popup .close{
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: default;
+}
+
+#Popup .close span{
+    cursor: pointer;
+    font-weight: bold;
 }

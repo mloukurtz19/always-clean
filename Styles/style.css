@@ -1,5 +1,17 @@
 @import url(constants.css);
 
+.grecaptcha-badge { visibility: hidden; }
+
+.recaptcha-policy{
+    color: var(--blue-text);
+    opacity: 0.3;
+    cursor: default;
+}
+
+.recaptcha-policy a{
+    color: var(--blue-text);
+}
+
 html{
     scroll-behavior: smooth;
 }
