@@ -8,7 +8,7 @@
     <header>
         <!-- To change logo: Upload picture to the 'pictures' folder and place the name -->
         <!-- of the image below -->
-        <image>LogoA2.png</image>
+        <image>AC_Logo.svg</image>
         <!-- To change the title of your website simply edit the text below -->
         <title>Always Clean</title>
     </header>
@@ -48,7 +48,7 @@
     <!-- The ampersand character '&' is not allowed in xml -->
     <!-- Instead replace anything that has '&' with '&amp;' -->
         <!-- Below is the logo image (follow previous instructions for changing) -->
-        <image>LogoB.png</image>
+        <image>AC_Logo.svg</image>
         <!-- Below is the email and can be changed by editing the text below -->
         <email>mloukurtz19@gmail.com</email>
         <!-- Below is the phone number and can be changed by editing the text below -->

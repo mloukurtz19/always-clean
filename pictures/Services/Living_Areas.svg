@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   xml:space="preserve"
+   id="svg6"
+   sodipodi:docname="Living_Areas.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs6" /><sodipodi:namedview
+   id="namedview6"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="3.0195312"
+   inkscape:cx="128"
+   inkscape:cy="128"
+   inkscape:window-width="1920"
+   inkscape:window-height="991"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg6" />
+<g
+   style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+   transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+   id="g6">
+	<path
+   d="M 84.99 30.88 h -5.28 v -4.5 c 0 -6.399 -5.206 -11.604 -11.604 -11.604 h -46.21 c -6.399 0 -11.605 5.206 -11.605 11.604 v 4.5 H 5.01 C 2.248 30.88 0 33.127 0 35.89 V 64.57 c 0 0.553 0.448 1 1 1 h 10.838 l -4.663 8.158 c -0.177 0.31 -0.176 0.689 0.003 0.998 c 0.179 0.309 0.508 0.498 0.865 0.498 h 8.041 c 0.271 0 0.531 -0.11 0.719 -0.306 l 9.029 -9.349 h 38.334 l 9.03 9.349 c 0.188 0.195 0.448 0.306 0.72 0.306 h 8.041 c 0.356 0 0.687 -0.189 0.865 -0.498 s 0.18 -0.688 0.003 -0.998 l -4.663 -8.158 H 89 c 0.553 0 1 -0.447 1 -1 V 35.89 C 90 33.127 87.753 30.88 84.99 30.88 z M 12.29 26.38 c 0 -5.296 4.309 -9.604 9.605 -9.604 h 46.21 c 5.296 0 9.604 4.309 9.604 9.604 v 4.5 h -1.709 c -2.763 0 -5.011 2.248 -5.011 5.01 v 8.694 c -17.254 -4.298 -34.727 -4.298 -51.981 0 V 35.89 c 0 -2.762 -2.248 -5.01 -5.01 -5.01 H 12.29 V 26.38 z M 19.009 46.642 c 17.251 -4.38 34.73 -4.38 51.981 0 v 5.973 H 19.009 V 46.642 z M 15.66 73.225 H 9.767 l 4.375 -7.654 h 8.911 L 15.66 73.225 z M 80.233 73.225 h -5.893 l -7.394 -7.654 h 8.911 L 80.233 73.225 z M 88 63.57 H 76.438 H 64.591 H 25.409 H 13.562 H 2 V 35.89 c 0 -1.66 1.35 -3.01 3.01 -3.01 h 6.28 H 14 c 1.66 0 3.01 1.35 3.01 3.01 v 17.726 c 0 0.553 0.448 1 1 1 H 71.99 c 0.553 0 1 -0.447 1 -1 V 35.89 c 0 -1.66 1.351 -3.01 3.011 -3.01 h 2.709 h 6.28 c 1.659 0 3.01 1.35 3.01 3.01 V 63.57 z"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform=" matrix(1 0 0 1 0 0) "
+   stroke-linecap="round"
+   id="path1" />
+	<circle
+   cx="44.995999999999995"
+   cy="29.996"
+   r="1.666"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform="  matrix(1 0 0 1 0 0) "
+   id="circle1" />
+	<path
+   d="M 54.363 36.344 c 0.92 0 1.666 -0.746 1.666 -1.666 c 0 -0.92 -0.746 -1.666 -1.666 -1.666 c -0.92 0 -1.666 0.746 -1.666 1.666 C 52.697 35.599 53.443 36.344 54.363 36.344 z"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform=" matrix(1 0 0 1 0 0) "
+   stroke-linecap="round"
+   id="path2" />
+	<path
+   d="M 54.363 26.982 c 0.92 0 1.666 -0.746 1.666 -1.666 c 0 -0.92 -0.746 -1.666 -1.666 -1.666 c -0.92 0 -1.666 0.746 -1.666 1.666 C 52.697 26.236 53.443 26.982 54.363 26.982 z"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform=" matrix(1 0 0 1 0 0) "
+   stroke-linecap="round"
+   id="path3" />
+	<path
+   d="M 35.637 36.344 c 0.92 0 1.666 -0.746 1.666 -1.666 c 0 -0.92 -0.746 -1.666 -1.666 -1.666 c -0.92 0 -1.666 0.746 -1.666 1.666 C 33.971 35.599 34.717 36.344 35.637 36.344 z"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform=" matrix(1 0 0 1 0 0) "
+   stroke-linecap="round"
+   id="path4" />
+	<path
+   d="M 35.637 26.982 c 0.92 0 1.666 -0.746 1.666 -1.666 c 0 -0.92 -0.746 -1.666 -1.666 -1.666 c -0.92 0 -1.666 0.746 -1.666 1.666 C 33.971 26.236 34.717 26.982 35.637 26.982 z"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform=" matrix(1 0 0 1 0 0) "
+   stroke-linecap="round"
+   id="path5" />
+	<circle
+   cx="63.726"
+   cy="29.996"
+   r="1.666"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform="  matrix(1 0 0 1 0 0) "
+   id="circle5" />
+	<circle
+   cx="26.276"
+   cy="29.996"
+   r="1.666"
+   style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#0a6f9f;fill-rule:nonzero;opacity:1;fill-opacity:1"
+   transform="  matrix(1 0 0 1 0 0) "
+   id="circle6" />
+</g>
+</svg>

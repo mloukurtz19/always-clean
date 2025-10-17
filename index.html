@@ -8,14 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/sections.css">
         <link rel="stylesheet" href="Styles/style.css">
-        <link rel="stylesheet" href="Styles/header.css">
-        <link rel="stylesheet" href="Styles/about-me.css">
-        <link rel="stylesheet" href="Styles/business-quote.css">
-        <link rel="stylesheet" href="Styles/picture-carousel.css">
-        <link rel="stylesheet" href="Styles/contact-me.css">
-
-        <link rel="icon" href="pictures/LogoA.jpg">
+        <link rel="stylesheet" href="Styles/mobile.css">
+        
+        <link rel="icon" href="pictures/AC_Logo.svg">
         <title>Always Clean</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,18 +45,12 @@
         </script>
     </head>
     <body>
-        <!-- Cute pictures!!! -->
-        <!-- <div class="overlay-container">
-            <img src="pictures/sponge.png" class="overlay-img img-aboutMe-bottom-left">
-            <img src="pictures/spray-bottle.png" class="overlay-img img-quote-bottom-right">
-            <img src="pictures/laundry_detergent.png" class="overlay-img img-quote-bottom-left">
-        </div> -->
         <div class="hero">
            <header>
-            <div class="blue-header">
-                <img src="./pictures/LogoA2.png">
-                <h1>Always Clean</h1>
-            </div>
+                <div class="blue-header">
+                    <img src="./pictures/AC_Logo.svg">
+                    <h1>Always Clean</h1>
+                </div>
             </header>
             <!-- About Me -->
             <div id="aboutMe" class="about-me bubbles">
@@ -73,295 +64,398 @@
                     <h2>A Clean Home = A Happy Home</h2>
                     <div class="content"></div>
                     <!-- I want you to notice the difference in your home. Great cleaning creates an inviting home you can be proud of! I believe details, honesty, and precision make the difference. Balancing work, school, and life is difficult already and cleaning becomes a hassle. I am here to relieve you of that difficulty freeing you up to enjoy life!  -->
-                    <button onclick="goToQuote()">Get a Quote!</button>
+                    <button onclick="goToQuote()">REQUEST A QUOTE TODAY!</button>
                 </div>
                 
             </div> 
         </div>
+
+        <!-- Testimonials -->
+        <div id="Testimonials" class="blue-on-blue">
+            <div>
+                <div class="leftQuote">
+                    <img src="pictures/leftQ.svg">
+                </div>
+                <div class="testimony">
+                    Melinda is the Superwoman of housekeeping! 
+                    
+                    She comes to the rescue! Prompt, professional and thorough! 
+                    
+                    Melinda has been cleaning our home now going on two years. Whether it’s a larger detail clean (semiannual) or a more basic clean (monthly), we can leave our house knowing she will do a good job, returning hours later with the work done and the house locked up. 
+                    
+                    A joy to work with.
+
+                </div>
+                <div class="rightQuote">
+                    <img src="pictures/leftQ.svg">
+                </div>
+            </div>
+            <div class="contributor">-Regards, Curtis Bledsoe</div>
+            <div class="nav">
+                <img src="pictures/NavCircle_W.svg">
+                <img src="pictures/NavCircle_B.svg">
+                <img src="pictures/NavCircle_W.svg">
+                <img src="pictures/NavCircle_W.svg">
+                <img src="pictures/NavCircle_W.svg">
+            </div>
+        </div>
         
-        <!-- Quote -->
-        <div class="section white-on-blue" id="quoteSection">
-            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">
-            <div class="quote-section">
-                <h2>Request a Quote</h2>
-                <div class="step1">
-                    <p>Step 1: Select a Package</p>
-                    <div class="rowA">
-                        <div class="packageCard">
-                            <h3>Basic Clean</h3>
+        <!-- Services -->
+        <div id="Services">
+            <img src="pictures/Decorative_Line.svg" class="decorative-line">
+            <h2>Services</h2>
+            <div class="container">
+                <!-- Basic Clean -->
+                <div class="card">
+                    <div class="name">
+                        <h3>Basic Clean</h3>
+                    </div>
+                    <div class="content">
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Organization.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Tidying Up</span>
+                            </div>
                             <ul>
                                 <li>Replace trash bags</li>
-                                <li>Declutter and organize</li>
-                                <li>Vacuum/sweep and mop</li>
-                                <li>Wipe down kitchen appliances and sink</li>
-                                <li>Window panes and window sills</li>
-                                <li>Clean bathrooms</li>
-                                <li>Clean ceiling fans</li>
+                                <li>Dust</li>
                             </ul>
-                            <button onclick="formContinuation(2, ['Basic Clean'])">Select</button>
                         </div>
-        
-                        <div class="packageCard">
-                            <h3>Deep Clean</h3>
-                            <div class="multiList">
-                                <ul>
-                                    <li>Includes Basic Clean</li>
-                                    <li>Window tracks</li>
-                                    <li>Insides of all cabinets</li>
-                                    <li>Clean shower heads</li>
-                                    <li>Remove soap-scum and limescale</li>
-                                    <li>Under furniture</li>
-                                </ul>
-                                <ul>
-                                    <li>Inside and outside kitchen appliances</li>
-                                    <li>Under couch and chair cushions</li>
-                                    <li>Window blinds</li>
-                                    <li>Doors and walls</li>
-                                </ul>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Floors.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Floors</span>
                             </div>
-                            <button onclick="formContinuation(2, ['Deep Clean'])">Select</button>
+                            <ul>
+                                <li>Vacuum/sweep and mop</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Kitchen.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Kitchen</span>
+                            </div>
+                            <ul>
+                                <li>Wipe down kitchen appliances and sink</li>
+                                <li>Counters</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Bathroom.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Bathrooms</span>
+                            </div>
+                            <ul>
+                                <li>Clean Bathrooms</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Window.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Windows</span>
+                            </div>
+                            <ul>
+                                <li>Window panes</li>
+                                <li>Window sills</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="packageCard">
-                        <h3>Create Your Own!</h3>
-                        <div class="multiList" style="justify-content: center;">
-                            <ul style="list-style-type:none">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Replace trash bags">
-                                        Replace trash bags
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Declutter and organize">
-                                        Declutter and organize
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Vacuum/sweep and mop">
-                                        Vacuum/sweep and mop
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Wipe down kitchen appliances and sink">
-                                        Wipe down kitchen appliances and sink
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Window panes, sills, and tracks">
-                                        Window panes, sills, and tracks
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Clean bathrooms">
-                                        Clean bathrooms
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Window blinds">
-                                        Window blinds
-                                    </label>                                    
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Clean ceiling fans">
-                                        Clean ceiling fans
-                                    </label>
-                                </li>
-                            </ul>
-
-                            <ul style="list-style-type:none">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Insides of all cabinets">
-                                        Insides of all cabinets
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Clean shower heads">
-                                        Clean shower heads
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Remove soap-scum and limescale">
-                                        Remove soap-scum and limescale
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Under furniture">
-                                        Under furniture
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Inside and outside kitchen appliances">
-                                        Inside and outside kitchen appliances
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Under couch and chair cushions">
-                                        Under couch and chair cushions
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Doors">
-                                        Doors
-                                    </label>
-                                </li>                                
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="customPackage" value="Walls">
-                                        Walls
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>                    
-                        <button onclick="ensureValidity(checkboxesChosen('customPackage'))">Select</button>
-                    </div>  
                 </div>
-                <form action="https://formspree.io/f/xzzgdqon" method="POST">
-                    <div class="step2">
-                        <p>Step 2: Enter Details</p>
-                        <div class="multiList">
-                            <div class="inputs first">
-                                <div id="emailForm">
-                                    <label>Email</label>
-                                    <p class="errorMessage">Please enter a valid email</p>
-                                    <input id="email_Input" type="text" name="email" required>
+
+                <!-- Deep Clean -->
+                <div class="card">
+                    <div class="name">
+                        <h3>Deep Clean</h3>
+                    </div>
+                    <div class="content">
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Kitchen.svg">
+                                    <div class="circle"></div>
                                 </div>
-                                <div id="firstNameForm">
-                                    <label>First Name</label>
-                                    <p class="errorMessage">Please enter a valid name</p>
-                                    <input id="firstName_Input" type="text" name="firstName" required>
-                                </div>
-                                <div id="lastNameForm">
-                                    <label>Last Name</label>
-                                    <p class="errorMessage">Please enter a valid name</p>
-                                    <input id="lastName_Input" type="text" name="lastName" required>
-                                </div>
-                                <div id="cleaningDayForm">
-                                    <label>What day would you like me to come clean?</label>
-                                    <p class="errorMessage">Must give at least a 24 hour notice.</p>
-                                    <input id="cleaningDate_Input" type="date" name="cleaningDate" required>
-                                </div>
-                                <div><label>What time works best?</label><input id="cleaningTime_Input" type="time" name="cleaningTime" required></div>
+                                <span>Kitchen & Appliances</span>
                             </div>
-                            <div class="inputs">
-                                <div id="addressForm">
-                                    <label>Address</label>
-                                    <p class="errorMessage">Please ensure the address is correct</p>
-                                    <input id="address_Input" type="text" name="address" required>
-                                </div>
-                                <div id="bedroomQtyForm">
-                                    <label>Bedroom Quantity</label>
-                                    <p class="errorMessage">I am sorry, however, this is not possible</p>
-                                    <input id="bedroomQuantity_Input" type="number" name="bedroomQuantity" required>
-                                </div>
-                                <div id="bathroomQtyForm">
-                                    <label>Bathroom Quantity <p class="errorMessage">I am sorry, however, this is not possible</p></label>
-                                    <!-- <p class="errorMessage">I am sorry, however, this is not possible</p> -->
-                                    <input id="bathroomQuantity_Input" type="number" name="bathroomQuantity" required>
-                                </div>
-                                <div id="phoneNumberForm">
-                                    <label>Phone (Optional) - Numbers only <p class="errorMessage">Please enter a valid phone number</p></label>
-                                    <!-- <p class="errorMessage">Please enter a valid phone number</p> -->
-                                    <input id="phoneNmbr_Input" type="number" name="phoneNmbr">
-                                </div>
-                                <div id="commentsForm">
-                                    <label>Comments or Questions (Optional)</label>
-                                    <p class="errorMessage">500 character limit and special characters are invalid</p>
-                                    <textarea id="comments_Input" name="comments"></textarea>
-                                </div>
-                            </div>
-                            <input type="hidden" name="packageChosen">
-                        </div>                                              
-                        
-                        <div class="buttonContainer">
-                            <button type="button" onclick="formContinuation(1)">Previous</button>
-                            <button type="button" onclick="formContinuation(3)">Continue</button>
-                        </div>                        
-                    </div>   
-                    <div class="step3">
-                        <p>Step 3: Review and Confirm Details</p>
-                        Package Selected: <div id="packageSelected"></div>
-                        <div class="multiList">
-                            <div>
-                                <div><label>Email: </label><div id="email"></div></div>
-                                <div><label>First Name: </label><div id="firstName"></div></div>
-                                <div><label>Last Name: </label><div id="lastName"></div></div>
-                                <div><label>Cleaning Date: </label><div id="cleaningDay"></div></div>
-                                <div><label>Cleaning Start Time: </label><div id="cleaningTime"></div></div>
-                            </div>
-                            
-                            <div>
-                                <div><label>Address: </label><div id="address"></div></div>
-                                <div><label>Bedroom Quantity: </label><div id="bedroomQty"></div></div>
-                                <div><label>Bathroom Quantity: </label><div id="bathroomQty"></div></div>
-                                <div><label>Phone: </label><div id="phoneNmbr"></div></div>
-                            </div>
+                            <ul>
+                                <li>Cabinets</li>
+                                <li>Inside appliances</li>
+                            </ul>
                         </div>
-                        Comments/Questions: <div id="comments"></div>
-    
-                        <div class="g-recaptcha" data-sitekey="6LfVx2grAAAAALp2RlKIqIfCKg2j_1ehtIncE4l8"></div> 
-                        <div class="buttonContainer">
-                            <button type="button" onclick="formContinuation(2, '', true)">Previous</button>
-                            <button type="submit">Submit</button>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Bathroom.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Bathrooms</span>
+                            </div>
+                            <ul>
+                                <li>Clean shower heads</li>
+                                <li>Remove soap-scrum and limescale</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Living_Areas.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Living Areas</span>
+                            </div>
+                            <ul>
+                                <li>Under furniture</li>
+                                <li>Under couch and chair cushions</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <div class="title">
+                                <div>
+                                    <img src="pictures/Services/Window.svg">
+                                    <div class="circle"></div>
+                                </div>
+                                <span>Windows & Doors</span>
+                            </div>
+                            <ul>
+                                <li>Window blinds</li>
+                                <li>Window tracks</li>
+                                <li>Window panes</li>
+                                <li>Doors</li>
+                            </ul>
                         </div>
                     </div> 
-                </form>                         
+                </div>
             </div>
-            <img src="./pictures/Decorative Line Blue.png" class="decorative-line">          
-        </div>
-        <!-- Picture Carousel -->
-        <div class="bubbles">
             
-            <div class="img-carousel">
+            <!-- Fully Insured -->
+            <div id="FullyInsured">
+                <img src="pictures/Fully_Insured.svg">
+                Fully insured for your peace of mind
+            </div>
+        </div>
+
+        <!-- Promotion -->
+        <div id="Promotion">
+            <div>
+                <h2>Spook-Free Clean</h2>
+                <span>Valid from 10/1/2025 - 10/31/2025</span>
+            </div>            
+            <span id="p_description">
+                New customers save $15 on their first deep clean.
+            </span>
+            <img src="pictures/dArrow.svg">
+        </div>
+
+        <!-- Form -->
+        <div id="Form" class="bubbles">            
+            <form action="https://formspree.io/f/xzzgdqon" method="POST">
+                <img src="pictures/Decorative_Line.svg" class="decorative-line">
+                <h2>Request a Quote</h2>
+
+                <div class="form">
+                    <div class="row">
+                        <div class="column">
+                            <label for="full_name"><img src="pictures/Form/Person.svg"><span class="invalid">INVALID </span>*Full Name</label>
+                            <input id="full_name" type="text">
+                        </div>
+                        <div class="column">
+                            <label for="email"><img src="pictures/Form/Mail.svg"><span class="invalid">INVALID </span>*Email</label>
+                            <input id="email" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="preferred_date"><img src="pictures/Form/Calendar.svg"><span class="invalid">INVALID </span>*Preferred Date</label>
+                            <input id="preferred_date" type="date" min="">
+                        </div>
+                        <div class="column">
+                            <label for="preferred_time"><img src="pictures/Form/Clock.svg"><span class="invalid">INVALID </span>*Preferred Time</label>
+                            <input id="preferred_time" type="time">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="address"><img src="pictures/Form/Location.svg"><span class="invalid">INVALID </span>*Address</label>
+                            <input id="address" type="text">
+                        </div>
+                        <div class="column">
+                            <label for="phone"><img src="pictures/Form/Phone.svg"><span class="invalid">INVALID </span>Phone (optional)</label>
+                            <input id="phone" type="number">
+                        </div>
+                    </div>
+                    <div class="row lastrow">
+                        <label for="additional_details"><span class="invalid">INVALID </span>Additional Details (optional)</label>
+                        <textarea id="additional_details" maxlength="500"></textarea>
+                    </div>
+                    <div class="g-recaptcha" 
+                        data-sitekey="6LfVx2grAAAAALp2RlKIqIfCKg2j_1ehtIncE4l8"
+                        data-callback="onSubmit"
+                        data-size="invisible">
+                    </div> 
+                    <button id="submit-button" type="submit">Get a Free Quote</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Form -->
+        <!-- <form action="https://formspree.io/f/xzzgdqon" method="POST">
+            <div class="step2">
+                <p>Step 2: Enter Details</p>
+                <div class="multiList">
+                    <div class="inputs first">
+                        <div id="emailForm">
+                            <label>Email</label>
+                            <p class="errorMessage">Please enter a valid email</p>
+                            <input id="email_Input" type="text" name="email" required>
+                        </div>
+                        <div id="firstNameForm">
+                            <label>First Name</label>
+                            <p class="errorMessage">Please enter a valid name</p>
+                            <input id="firstName_Input" type="text" name="firstName" required>
+                        </div>
+                        <div id="lastNameForm">
+                            <label>Last Name</label>
+                            <p class="errorMessage">Please enter a valid name</p>
+                            <input id="lastName_Input" type="text" name="lastName" required>
+                        </div>
+                        <div id="cleaningDayForm">
+                            <label>What day would you like me to come clean?</label>
+                            <p class="errorMessage">Must give at least a 24 hour notice.</p>
+                            <input id="cleaningDate_Input" type="date" name="cleaningDate" required>
+                        </div>
+                        <div><label>What time works best?</label><input id="cleaningTime_Input" type="time" name="cleaningTime" required></div>
+                    </div>
+                    <div class="inputs">
+                        <div id="addressForm">
+                            <label>Address</label>
+                            <p class="errorMessage">Please ensure the address is correct</p>
+                            <input id="address_Input" type="text" name="address" required>
+                        </div>
+                        <div id="bedroomQtyForm">
+                            <label>Bedroom Quantity</label>
+                            <p class="errorMessage">I am sorry, however, this is not possible</p>
+                            <input id="bedroomQuantity_Input" type="number" name="bedroomQuantity" required>
+                        </div>
+                        <div id="bathroomQtyForm">
+                            <label>Bathroom Quantity <p class="errorMessage">I am sorry, however, this is not possible</p></label>
+                            <input id="bathroomQuantity_Input" type="number" name="bathroomQuantity" required>
+                        </div>
+                        <div id="phoneNumberForm">
+                            <label>Phone (Optional) - Numbers only <p class="errorMessage">Please enter a valid phone number</p></label>
+                            <input id="phoneNmbr_Input" type="number" name="phoneNmbr">
+                        </div>
+                        <div id="commentsForm">
+                            <label>Comments or Questions (Optional)</label>
+                            <p class="errorMessage">500 character limit and special characters are invalid</p>
+                            <textarea id="comments_Input" name="comments"></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="packageChosen">
+                </div>                                              
+                
+                <div class="buttonContainer">
+                    <button type="button" onclick="formContinuation(1)">Previous</button>
+                    <button type="button" onclick="formContinuation(3)">Continue</button>
+                </div>                        
+            </div>   
+            <div class="step3">
+                <p>Step 3: Review and Confirm Details</p>
+                Package Selected: <div id="packageSelected"></div>
+                <div class="multiList">
+                    <div>
+                        <div><label>Email: </label><div id="email"></div></div>
+                        <div><label>First Name: </label><div id="firstName"></div></div>
+                        <div><label>Last Name: </label><div id="lastName"></div></div>
+                        <div><label>Cleaning Date: </label><div id="cleaningDay"></div></div>
+                        <div><label>Cleaning Start Time: </label><div id="cleaningTime"></div></div>
+                    </div>
+                    
+                    <div>
+                        <div><label>Address: </label><div id="address"></div></div>
+                        <div><label>Bedroom Quantity: </label><div id="bedroomQty"></div></div>
+                        <div><label>Bathroom Quantity: </label><div id="bathroomQty"></div></div>
+                        <div><label>Phone: </label><div id="phoneNmbr"></div></div>
+                    </div>
+                </div>
+                Comments/Questions: <div id="comments"></div>
+
+                <div class="g-recaptcha" data-sitekey="6LfVx2grAAAAALp2RlKIqIfCKg2j_1ehtIncE4l8"></div> 
+                <div class="buttonContainer">
+                    <button type="button" onclick="formContinuation(2, '', true)">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div> 
+        </form>  -->
+
+        <!-- Picture -->
+        <div id="Picture">
+            <img src="pictures/img-carousel/1000016414.jpg">            
+            <!-- <div class="img-carousel">
                 <div id="imgCarousel">
-                    <!-- The images are injected here for the carousel -->
                 </div>
                 <button style="left: 5px" onclick="carousel(-1)">&#10094;</button>
                 <button style="right: 5px" onclick="carousel(1)">&#10095;</button>
             </div>
-            
+             -->
             <!-- <div class="carousel-decor">
                 <img src="pictures/gloves.png" class="gloves">
                 <img src="pictures/broom.png" class="broom">
             </div> -->
 
         </div>
+
+        <!-- Footer -->
+        <div id="Footer">
+            <div class="logo_social">
+                <div class="logo">
+                    <img src="pictures/AC_Logo.svg">
+                </div>
+                <a href="https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank">
+                    <img class="instagram" src="pictures/Footer/Instagram 2.svg">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100092655759980" target="_blank">
+                    <img class="facebook" src="pictures/Footer/Facebook.svg">
+                </a>
+            </div>
+            <div class="contact">
+                <span>mloukurtz19@gmail.com</span>
+                <span>479-966-9094</span>
+            </div>
+        </div>
+
         <!-- Contact Me -->
-        <div class="contact-me">
+        <!-- <div class="contact-me">
             <div class="contact-info">
                 <div class="logo">
-                    <img src="./pictures/LogoB.png">
+                    <img src="./pictures/AC_Logo.svg">
                 </div>
                 <div class="email-phone">
                     <div>Email: mloukurtz19@gmail.com</div>
                     <div>Phone: 479-276-8305</div>
                 </div>
-            </div>           
-            <div class="social-media">
-                <!-- <a href="https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank">
-                    <img src="pictures/ig-instagram-icon.png">
-                    @always_clean_1123
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100092655759980" target="_blank">
-                    <img src="pictures/facebook-square-icon.png">
-                    (Facebook)
-                </a> -->
-            </div>
-        </div>
-        <script src="script.js"></script>
+            </div> 
+        </div> -->
+        <script src="formValidation.js"></script>
     </body>
 </html>

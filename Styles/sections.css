@@ -1,0 +1,509 @@
+@import url(constants.css);
+
+/* Header */
+.hero{
+    display: contents;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+header{
+    height: var(--header-height); 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    position: relative;
+
+    padding-left: 2.5em;
+}
+
+header img{
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+.blue-header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+
+    /* border-bottom-left-radius: 10px; */
+    padding-left: 0.125em; /* 2px */
+    position: relative;
+    /* border-bottom-left-radius: 2.5em;
+    border-top-left-radius: 2.5em; */
+    border-bottom: 3.5px solid var(--blue-text);
+}
+
+/* The Blue Line */
+/* .blue-header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 2.5em);
+    height: 3px;
+    background-image: linear-gradient(to left, var(--blue-text) calc(100% - 2.5em), transparent);
+} */
+
+/* About Me */
+
+.about-me{
+    height: var(--remaining-space-total);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    gap: 1rem;
+
+    color: var(--blue-text);
+    padding-top: 2rem;
+}
+
+.about-me h2{
+    white-space: normal;
+    overflow: hidden;
+}
+
+.about-img{
+    aspect-ratio: 1/1;
+    height: 100%;
+    max-width: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.image-cropper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: -15px 15px var(--pink);
+}
+
+.image-cropper img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.about-me .content{
+    /* margin: 2em; */
+    font-size: 1.7rem;
+    line-height: 2;
+    max-width: 45rem;
+}
+
+.about-me div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-me div:nth-child(2) button{
+    width: 100%;
+    background-color: var(--pink);
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    transition: 0.3s transform ease;
+}
+
+.about-me div:nth-child(2) button:hover{
+    transform: scale(1.03);
+}
+
+.about-me div:nth-child(2){
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Testimonials Section */
+
+#Testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#Testimonials .testimony{
+    width: 700px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+
+#Testimonials .rightQuote{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#Testimonials .rightQuote img{
+    transform: rotate(180deg);
+}
+
+#Testimonials .nav{
+    display: flex;
+    gap: 1rem;
+}
+
+#Testimonials .nav img{
+    cursor: pointer;
+}
+
+/* Services Section */
+#Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 0 2rem 0;
+    gap: 1rem;
+}
+
+#Services .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+    padding: 0 1rem 0 1rem;
+}
+
+#Services .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--gray);
+    border-radius: 5px;
+
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem
+}
+
+#Services .card .name{
+    display: flex;
+    height: 44px;
+    align-items: center;
+}
+
+#Services .card h3{
+    color: var(--pink-text);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+}
+
+#Services .card .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Services .card .content .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+#Services .service ul{
+    padding-left: 1rem;
+    line-height: 1.5rem;
+}
+
+#Services .card .content .service .title{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+#Services .card .content .service .title div{
+    height: 90px;
+    width: 90px;
+    position: relative;
+}
+
+#Services .service .title div img, #Services .card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Services .service .title div img{
+    z-index: 2;
+    height: 90px;
+    width: 90px;
+}
+
+#Services .card .circle{
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    border-radius: 9999px;
+    background-color: var(--white);
+}
+
+/* Fully Insured */
+#FullyInsured{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    padding-top: 1rem;
+
+    font-size: 1.5rem;
+    color: var(--pink-text);
+    font-weight: 600;
+}
+
+#FullyInsured img{
+    width: 10.9375rem;
+    height: 10.9375rem;
+}
+
+/* Promotion */
+
+#Promotion{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0 2rem 0;
+
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+#Promotion h2{
+    color: var(--white);
+    line-height: 2.5rem;
+}
+
+#Promotion div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Promotion span{
+    line-height: 1.25rem;
+    font-weight: bold;
+}
+
+#Promotion div span{
+    opacity: 0.8;
+}
+
+/* Form */
+.invalid{
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.invalid.error{
+    display: block;
+}
+
+input.error{
+    border-color: red !important;
+}
+
+input.error:focus-visible{
+    outline: 0;
+}
+
+#Form{
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#Form form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    background-color: var(--white);
+}
+
+#Form .form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    width: 700px;
+    
+}
+
+#Form .form .row{
+    display: flex;
+    gap: 2rem;
+}
+
+#Form .form .row.lastrow{
+    flex-direction: column;
+    gap: 0;
+}
+
+#Form .form .column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#Form .form label{
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    gap: 5px;
+}
+
+#Form .form img{
+    width: 1rem;
+    height: 1rem;
+}
+
+#Form input, #Form textarea{
+    height: 2.8125rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue);
+    border: 3px solid var(--blue);
+    border-radius: 5px;
+
+    color: var(--blue-text);
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 5px;
+}
+
+#Form textarea{
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+#Form input:focus, #Form textarea:focus{
+    outline-color: var(--blue-text);
+}
+
+#Form button{
+    height: 2.8125rem;
+    background-color: var(--pink);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    border-radius: 9999px;
+    margin: 1rem 0 1rem 0;
+}
+
+/* Picture */
+
+#Picture{
+    display: flex;
+    width: 100%;
+    /* height: 60vh; */
+
+    padding: 2rem 0 2rem 0;
+}
+
+#Picture img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* Footer */
+
+#Footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+    padding: 2rem 0 2rem 0;
+    
+    background-color: var(--blue-text);
+    color: var(--white);
+}
+
+#Footer .logo_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+#Footer .logo{
+    display: flex;
+    width: 80px;
+    height: 80px;
+
+    background-color: var(--white);
+    border-radius: 9999px;
+}
+
+#Footer .instagram{
+    width: 50px;
+    height: 50px;
+}
+
+#Footer .facebook{
+    width: 48px;
+    height: 48px;
+}
+
+#Footer .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
