@@ -111,7 +111,7 @@
                         <h3>Basic Clean</h3>
                     </div>
                     <div class="content">
-                        <div class="service">
+                        <div class="service" data-service="BC Tidying Up">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Organization.svg">
@@ -125,7 +125,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="BC Floors">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Floors.svg">
@@ -138,7 +138,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="BC Kitchen">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Kitchen.svg">
@@ -152,7 +152,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="BC Bathrooms">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Bathroom.svg">
@@ -165,7 +165,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="BC Windows">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Window.svg">
@@ -187,7 +187,7 @@
                         <h3>Deep Clean</h3>
                     </div>
                     <div class="content">
-                        <div class="service">
+                        <div class="service" data-service="DC Kitchen & Appliances">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Kitchen.svg">
@@ -201,7 +201,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="DC Bathrooms">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Bathroom.svg">
@@ -215,7 +215,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="DC Living Areas">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Living_Areas.svg">
@@ -229,7 +229,7 @@
                             </ul>
                         </div>
 
-                        <div class="service">
+                        <div class="service" data-service="DC Windows & Doors">
                             <div class="title">
                                 <div>
                                     <img src="pictures/Services/Window.svg">
@@ -313,7 +313,13 @@
                         data-callback="onSubmit"
                         data-size="invisible">
                     </div> 
+                                   
                     <button id="submit-button" type="submit">Get a Free Quote</button>
+                    <div class="recaptcha-policy">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </div>     
                 </div>
             </form>
         </div>
@@ -444,6 +450,27 @@
             </div>
         </div>
 
+        <div id="Popup">
+            <div class="container">
+                <span class="close"><span id="closePopup">x</span></span>
+                <div id="popupContent">
+                    <!-- <div class="service">
+                        <div class="title">
+                            <div>
+                                <img src="pictures/Services/Bathroom.svg">
+                                <div class="circle"></div>
+                            </div>
+                            <span id="popupSTitle">Bathrooms</span>
+                        </div>
+                        <ul id="popupSDetails">
+                            <li>Clean shower heads</li>
+                            <li>Remove soap-scrum and limescale</li>
+                        </ul>
+                    </div> -->
+                </div>                
+            </div>
+        </div>
+
         <!-- Contact Me -->
         <!-- <div class="contact-me">
             <div class="contact-info">
@@ -457,5 +484,6 @@
             </div> 
         </div> -->
         <script src="formValidation.js"></script>
+        <script src="modal.js"></script>
     </body>
 </html>
