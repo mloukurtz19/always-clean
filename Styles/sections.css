@@ -150,7 +150,37 @@ header img{
     padding: 2rem 0 2rem 0;
 }
 
+#Testimonials .testimonial-list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.testimonial-list::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-list.scrolling{
+    cursor: pointer;
+}
+
 #Testimonials .testimony{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    user-select: none;
+}
+
+#Testimonials .testimony > div:first-of-type{
+    padding: 0 1rem;
+}
+
+#Testimonials .testimony-section{
     width: 700px;
     text-align: center;
     font-size: 1rem;
@@ -409,6 +439,7 @@ input.error:focus-visible{
 
 #Form input, #Form textarea{
     height: 2.8125rem;
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
