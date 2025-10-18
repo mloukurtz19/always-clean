@@ -36,7 +36,6 @@ slider.addEventListener('mouseup', (event) => {
 })
 
 slider.addEventListener('touchstart', (event) => {
-    event.preventDefault();
     startX = event.changedTouches[0].pageX;
 })
 
