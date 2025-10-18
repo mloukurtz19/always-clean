@@ -72,31 +72,71 @@
 
         <!-- Testimonials -->
         <div id="Testimonials" class="blue-on-blue">
-            <div>
-                <div class="leftQuote">
-                    <img src="pictures/leftQ.svg">
-                </div>
+            <div class="testimonial-list">
                 <div class="testimony">
-                    Melinda is the Superwoman of housekeeping! 
+                    <div>
+                        <div class="leftQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                        <div class="testimony-section">
+                            Melinda is the Superwoman of housekeeping! 
+                            
+                            She comes to the rescue! Prompt, professional and thorough! 
+                            
+                            Melinda has been cleaning our home now going on two years. Whether it’s a larger detail clean (semiannual) or a more basic clean (monthly), we can leave our house knowing she will do a good job, returning hours later with the work done and the house locked up. 
+                            
+                            A joy to work with.
+        
+                        </div>
+                        <div class="rightQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                    </div>
                     
-                    She comes to the rescue! Prompt, professional and thorough! 
-                    
-                    Melinda has been cleaning our home now going on two years. Whether it’s a larger detail clean (semiannual) or a more basic clean (monthly), we can leave our house knowing she will do a good job, returning hours later with the work done and the house locked up. 
-                    
-                    A joy to work with.
+                    <div class="contributor">-Regards, Curtis Bledsoe</div>
+                </div>
 
+                <!-- <div class="testimony">
+                    <div>
+                        <div class="leftQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                        <div class="testimony-section">
+                            Lorem ipsum
+        
+                        </div>
+                        <div class="rightQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                    </div>
+                    
+                    <div class="contributor">-Unknown</div>
                 </div>
-                <div class="rightQuote">
-                    <img src="pictures/leftQ.svg">
-                </div>
+
+                <div class="testimony">
+                    <div>
+                        <div class="leftQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                        <div class="testimony-section">
+                            Lorem ipsum
+        
+                        </div>
+                        <div class="rightQuote">
+                            <img src="pictures/leftQ.svg">
+                        </div>
+                    </div>
+                    
+                    <div class="contributor">-Jacinth</div>
+                </div> -->
             </div>
-            <div class="contributor">-Regards, Curtis Bledsoe</div>
+            
             <div class="nav">
-                <img src="pictures/NavCircle_W.svg">
                 <img src="pictures/NavCircle_B.svg">
+                <!-- <img src="pictures/NavCircle_W.svg">
                 <img src="pictures/NavCircle_W.svg">
                 <img src="pictures/NavCircle_W.svg">
-                <img src="pictures/NavCircle_W.svg">
+                <img src="pictures/NavCircle_W.svg"> -->
             </div>
         </div>
         
@@ -324,96 +364,6 @@
             </form>
         </div>
 
-        <!-- Form -->
-        <!-- <form action="https://formspree.io/f/xzzgdqon" method="POST">
-            <div class="step2">
-                <p>Step 2: Enter Details</p>
-                <div class="multiList">
-                    <div class="inputs first">
-                        <div id="emailForm">
-                            <label>Email</label>
-                            <p class="errorMessage">Please enter a valid email</p>
-                            <input id="email_Input" type="text" name="email" required>
-                        </div>
-                        <div id="firstNameForm">
-                            <label>First Name</label>
-                            <p class="errorMessage">Please enter a valid name</p>
-                            <input id="firstName_Input" type="text" name="firstName" required>
-                        </div>
-                        <div id="lastNameForm">
-                            <label>Last Name</label>
-                            <p class="errorMessage">Please enter a valid name</p>
-                            <input id="lastName_Input" type="text" name="lastName" required>
-                        </div>
-                        <div id="cleaningDayForm">
-                            <label>What day would you like me to come clean?</label>
-                            <p class="errorMessage">Must give at least a 24 hour notice.</p>
-                            <input id="cleaningDate_Input" type="date" name="cleaningDate" required>
-                        </div>
-                        <div><label>What time works best?</label><input id="cleaningTime_Input" type="time" name="cleaningTime" required></div>
-                    </div>
-                    <div class="inputs">
-                        <div id="addressForm">
-                            <label>Address</label>
-                            <p class="errorMessage">Please ensure the address is correct</p>
-                            <input id="address_Input" type="text" name="address" required>
-                        </div>
-                        <div id="bedroomQtyForm">
-                            <label>Bedroom Quantity</label>
-                            <p class="errorMessage">I am sorry, however, this is not possible</p>
-                            <input id="bedroomQuantity_Input" type="number" name="bedroomQuantity" required>
-                        </div>
-                        <div id="bathroomQtyForm">
-                            <label>Bathroom Quantity <p class="errorMessage">I am sorry, however, this is not possible</p></label>
-                            <input id="bathroomQuantity_Input" type="number" name="bathroomQuantity" required>
-                        </div>
-                        <div id="phoneNumberForm">
-                            <label>Phone (Optional) - Numbers only <p class="errorMessage">Please enter a valid phone number</p></label>
-                            <input id="phoneNmbr_Input" type="number" name="phoneNmbr">
-                        </div>
-                        <div id="commentsForm">
-                            <label>Comments or Questions (Optional)</label>
-                            <p class="errorMessage">500 character limit and special characters are invalid</p>
-                            <textarea id="comments_Input" name="comments"></textarea>
-                        </div>
-                    </div>
-                    <input type="hidden" name="packageChosen">
-                </div>                                              
-                
-                <div class="buttonContainer">
-                    <button type="button" onclick="formContinuation(1)">Previous</button>
-                    <button type="button" onclick="formContinuation(3)">Continue</button>
-                </div>                        
-            </div>   
-            <div class="step3">
-                <p>Step 3: Review and Confirm Details</p>
-                Package Selected: <div id="packageSelected"></div>
-                <div class="multiList">
-                    <div>
-                        <div><label>Email: </label><div id="email"></div></div>
-                        <div><label>First Name: </label><div id="firstName"></div></div>
-                        <div><label>Last Name: </label><div id="lastName"></div></div>
-                        <div><label>Cleaning Date: </label><div id="cleaningDay"></div></div>
-                        <div><label>Cleaning Start Time: </label><div id="cleaningTime"></div></div>
-                    </div>
-                    
-                    <div>
-                        <div><label>Address: </label><div id="address"></div></div>
-                        <div><label>Bedroom Quantity: </label><div id="bedroomQty"></div></div>
-                        <div><label>Bathroom Quantity: </label><div id="bathroomQty"></div></div>
-                        <div><label>Phone: </label><div id="phoneNmbr"></div></div>
-                    </div>
-                </div>
-                Comments/Questions: <div id="comments"></div>
-
-                <div class="g-recaptcha" data-sitekey="6LfVx2grAAAAALp2RlKIqIfCKg2j_1ehtIncE4l8"></div> 
-                <div class="buttonContainer">
-                    <button type="button" onclick="formContinuation(2, '', true)">Previous</button>
-                    <button type="submit">Submit</button>
-                </div>
-            </div> 
-        </form>  -->
-
         <!-- Picture -->
         <div id="Picture">
             <img src="pictures/img-carousel/1000016414.jpg">            
@@ -454,36 +404,11 @@
             <div class="container">
                 <span class="close"><span id="closePopup">x</span></span>
                 <div id="popupContent">
-                    <!-- <div class="service">
-                        <div class="title">
-                            <div>
-                                <img src="pictures/Services/Bathroom.svg">
-                                <div class="circle"></div>
-                            </div>
-                            <span id="popupSTitle">Bathrooms</span>
-                        </div>
-                        <ul id="popupSDetails">
-                            <li>Clean shower heads</li>
-                            <li>Remove soap-scrum and limescale</li>
-                        </ul>
-                    </div> -->
                 </div>                
             </div>
         </div>
-
-        <!-- Contact Me -->
-        <!-- <div class="contact-me">
-            <div class="contact-info">
-                <div class="logo">
-                    <img src="./pictures/AC_Logo.svg">
-                </div>
-                <div class="email-phone">
-                    <div>Email: mloukurtz19@gmail.com</div>
-                    <div>Phone: 479-276-8305</div>
-                </div>
-            </div> 
-        </div> -->
         <script src="formValidation.js"></script>
         <script src="modal.js"></script>
+        <script src="testimonial.js"></script>
     </body>
 </html>
