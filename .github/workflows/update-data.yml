@@ -1,0 +1,37 @@
+name: Update data.json from Google Sheets
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # runs daily at 12:00 UTC
+  workflow_dispatch:      # manual trigger in GitHub Actions tab
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install node-fetch@2
+
+      - name: Update data.json
+        run: node scripts/update-data.js
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B github-bot-update
+
+          git add data.json
+          git commit -m "Update data.json from Google Sheets" || echo "No changes to commit"
+
+          git push origin github-bot-update --force
