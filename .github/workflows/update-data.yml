@@ -29,7 +29,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git checkout -B github-bot-update
+          git fetch origin
+          git checkout -B github-bot-update origin/github-bot-update || git checkout -b github-bot-update
 
           git add data.json
           git commit -m "Update data.json from Google Sheets" || echo "No changes to commit"
