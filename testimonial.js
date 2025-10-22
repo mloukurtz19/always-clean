@@ -36,10 +36,12 @@ slider.addEventListener('mouseup', (event) => {
 })
 
 slider.addEventListener('touchstart', (event) => {
+    console.log("TOUCH");
     startX = event.changedTouches[0].pageX;
 })
 
 slider.addEventListener('touchend', (event) => {
+    console.log("STOP TOUCH");
     if(nav_imgs > 1){
         if((startX - event.changedTouches[0].pageX) > 0){
             console.log("Moving right");
