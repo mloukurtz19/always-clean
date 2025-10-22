@@ -35,3 +35,17 @@ jobs:
           git commit -m "Update data.json from Google Sheets" || echo "No changes to commit"
 
           git push origin github-bot-update --force
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}   # default token works with read & write permissions
+          commit-message: "Update data.json from Google Sheets"
+          branch: github-bot-update
+          base: main
+          title: "Update data.json"
+          body: "Automated update of data.json from Google Sheets."
+          labels: automated
+          approve: true
+          merge: true
+          merge-method: merge
