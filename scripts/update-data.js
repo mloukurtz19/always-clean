@@ -15,7 +15,7 @@ const fetch = require("node-fetch");
       data: data
     };
 
-    fs.writeFileSync("../data.json", JSON.stringify(payload, null, 2));
+    fs.writeFileSync("./data.json", JSON.stringify(payload, null, 2));
     console.log("✅ data.json updated successfully!");
   } catch (err) {
     console.error("Failed to fetch data:", err);
