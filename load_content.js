@@ -113,8 +113,3 @@ fetch("content.xml")
 
     })
     .catch(err => console.log("Error:", err));
-
-    // Access Data
-    fetch("https://script.google.com/macros/s/AKfycbyXpkGb5SPZ8OyLjm4gEo9BUAnYsm6n1DyMi6LMhg81ZSV93MqSiY9yWcOavU_385pH-g/exec")
-    .then(res => res.json())
-    .then(data => console.log("DATA:", data));

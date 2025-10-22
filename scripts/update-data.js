@@ -6,6 +6,7 @@ const fetch = require("node-fetch");
 
   try {
     const response = await fetch(API_URL);
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     const data = await response.json();
 
     // Optional: add timestamp for last updated
@@ -18,5 +19,6 @@ const fetch = require("node-fetch");
     console.log("✅ data.json updated successfully!");
   } catch (err) {
     console.error("Failed to fetch data:", err);
+    process.exit(1);
   }
 })();
