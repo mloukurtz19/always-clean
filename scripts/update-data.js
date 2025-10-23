@@ -2,7 +2,7 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 (async () => {
-  const API_URL = "https://script.google.com/macros/library/d/1gkuu09sHbAfDWxeT5nIXtX133--bmKUllChMp7nacI9ceGIlVBdg3UrX/5";
+  const API_URL = "https://script.google.com/macros/s/AKfycbxcmgEauanCOI4qpNVfcCapEvWNSyZxZ4bj0BouLoc5PvWTzRIXYZ4A7otHKL5O9SWPpw/exec";
 
   try {
     const response = await fetch(API_URL);
