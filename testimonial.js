@@ -15,7 +15,11 @@ slider.addEventListener('mousedown', (event) => {
 
 function scrollTestimonial(scrollRight){
     testimonialsSlide.scrollBy(scrollRight ? window.innerWidth : (0 - window.innerWidth), 0);
-    testimonialNmbr = scrollRight ? testimonialNmbr + 1 : testimonialNmbr - 1;
+    if(scrollRight && (testimonialNmbr + 1) <= nav_imgs){
+        testimonialNmbr += 1;
+    }else if(!scrollRight && (testimonialNmbr - 1) >= 1){
+        testimonialNmbr -= 1;
+    }
     nav.querySelector("img:nth-child("+testimonialNmbr+")").src = "pictures/NavCircle_B.svg";
     nav.querySelector("img:nth-child("+(scrollRight ? testimonialNmbr-1 : testimonialNmbr+1)+")").src = "pictures/NavCircle_W.svg";
 }
@@ -52,3 +56,27 @@ slider.addEventListener('touchend', (event) => {
         }
     }    
 })
+
+for(let i = 1; i <= nav_imgs; i++){
+    let one_nav_img = nav.querySelector("img:nth-child("+i+")");
+
+    one_nav_img.addEventListener("click", (event) => {
+        console.log("Clicked one nav img", i, testimonialNmbr, one_nav_img.src);
+        if(one_nav_img.src.toString().endsWith("pictures/NavCircle_W.svg")){
+            console.log("WHITE");
+            if(testimonialNmbr < i){
+                let go_right_times = i - testimonialNmbr;
+                console.log("Scroll", go_right_times + "x to the right");
+                for(let j = 0; j < go_right_times; j++){
+                    scrollTestimonial(true);
+                }
+            }else{
+                let go_left_times = testimonialNmbr - i;
+                console.log("Scroll", go_left_times + "x to the left");
+                for(let j = 0; j < go_left_times; j++){
+                    scrollTestimonial(false);
+                }
+            }
+        }
+    })
+}
