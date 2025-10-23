@@ -128,10 +128,18 @@ header img{
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 9999px;
+}
+
+button{
     transition: 0.3s transform ease;
 }
 
-.about-me div:nth-child(2) button:hover{
+button:focus-visible{
+    outline: none;
+    transform: scale(1.03);
+}
+
+button:hover{
     transform: scale(1.03);
 }
 
@@ -181,7 +189,7 @@ header img{
 }
 
 #Testimonials .testimony-section{
-    width: 700px;
+    max-width: 700px;
     text-align: center;
     font-size: 1rem;
     line-height: 1.5;
@@ -243,7 +251,7 @@ header img{
 
 #Services .card .name{
     display: flex;
-    height: 44px;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -251,13 +259,13 @@ header img{
     color: var(--pink-text);
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 2.75rem;
     margin: 0;
 }
 
 #Services .card .content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 1rem;
 }

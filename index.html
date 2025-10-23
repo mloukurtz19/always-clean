@@ -12,26 +12,26 @@
         <link rel="stylesheet" href="Styles/style.css">
         <link rel="stylesheet" href="Styles/mobile.css">
         
-        <link rel="icon" href="pictures/AC_Logo.svg">
-        <title>Always Clean</title>
+        <link id="Official_Logo_A" rel="icon" href="pictures/AC_Logo.svg">
+        <title id="Official_Title_A">Always Clean</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <script rel="preload" as="fetch" src="load_content.js"></script>
+        <script src="scripts/load-data.js"></script>
     </head>
     <body>
         <div class="hero">
            <header>
                 <div class="blue-header">
-                    <img src="./pictures/AC_Logo.svg">
-                    <h1>Always Clean</h1>
+                    <img id="Official_Logo_B" src="./pictures/AC_Logo.svg">
+                    <h1 id="Official_Title_B">Always Clean</h1>
                 </div>
             </header>
             <!-- About Me -->
             <div id="aboutMe" class="about-me bubbles">
                 <div class="about-img">
                     <div class="image-cropper">
-                        <img src="./pictures/IMG_3125.jpeg">
+                        <img id="FirstPicture" src="./pictures/IMG_3125.jpeg">
                     </div>
                 </div>
 
@@ -48,29 +48,6 @@
         <!-- Testimonials -->
         <div id="Testimonials" class="blue-on-blue">
             <div class="testimonial-list">
-                <div class="testimony">
-                    <div>
-                        <div class="leftQuote">
-                            <img src="pictures/leftQ.svg">
-                        </div>
-                        <div class="testimony-section">
-                            Melinda is the Superwoman of housekeeping! 
-                            
-                            She comes to the rescue! Prompt, professional and thorough! 
-                            
-                            Melinda has been cleaning our home now going on two years. Whether it’s a larger detail clean (semiannual) or a more basic clean (monthly), we can leave our house knowing she will do a good job, returning hours later with the work done and the house locked up. 
-                            
-                            A joy to work with.
-        
-                        </div>
-                        <div class="rightQuote">
-                            <img src="pictures/leftQ.svg">
-                        </div>
-                    </div>
-                    
-                    <div class="contributor">-Regards, Curtis Bledsoe</div>
-                </div>
-
                 <!-- <div class="testimony">
                     <div>
                         <div class="leftQuote">
@@ -86,32 +63,11 @@
                     </div>
                     
                     <div class="contributor">-Unknown</div>
-                </div>
-
-                <div class="testimony">
-                    <div>
-                        <div class="leftQuote">
-                            <img src="pictures/leftQ.svg">
-                        </div>
-                        <div class="testimony-section">
-                            Lorem ipsum
-        
-                        </div>
-                        <div class="rightQuote">
-                            <img src="pictures/leftQ.svg">
-                        </div>
-                    </div>
-                    
-                    <div class="contributor">-Jacinth</div>
                 </div> -->
             </div>
             
             <div class="nav">
-                <img src="pictures/NavCircle_B.svg">
-                <!-- <img src="pictures/NavCircle_W.svg">
-                <img src="pictures/NavCircle_W.svg">
-                <img src="pictures/NavCircle_W.svg">
-                <img src="pictures/NavCircle_W.svg"> -->
+                <!-- <img src="pictures/NavCircle_B.svg"> -->
             </div>
         </div>
         
@@ -121,7 +77,7 @@
             <h2>Services</h2>
             <div class="container">
                 <!-- Basic Clean -->
-                <div class="card">
+                <!-- <div class="card">
                     <div class="name">
                         <h3>Basic Clean</h3>
                     </div>
@@ -140,146 +96,29 @@
                             </ul>
                         </div>
 
-                        <div class="service" data-service="BC Floors">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Floors.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Floors</span>
-                            </div>
-                            <ul>
-                                <li>Vacuum/sweep and mop</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="BC Kitchen">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Kitchen.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Kitchen</span>
-                            </div>
-                            <ul>
-                                <li>Wipe down kitchen appliances and sink</li>
-                                <li>Counters</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="BC Bathrooms">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Bathroom.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Bathrooms</span>
-                            </div>
-                            <ul>
-                                <li>Clean Bathrooms</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="BC Windows">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Window.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Windows</span>
-                            </div>
-                            <ul>
-                                <li>Window panes</li>
-                                <li>Window sills</li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Deep Clean -->
-                <div class="card">
-                    <div class="name">
-                        <h3>Deep Clean</h3>
-                    </div>
-                    <div class="content">
-                        <div class="service" data-service="DC Kitchen & Appliances">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Kitchen.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Kitchen & Appliances</span>
-                            </div>
-                            <ul>
-                                <li>Cabinets</li>
-                                <li>Inside appliances</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="DC Bathrooms">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Bathroom.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Bathrooms</span>
-                            </div>
-                            <ul>
-                                <li>Clean shower heads</li>
-                                <li>Remove soap-scrum and limescale</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="DC Living Areas">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Living_Areas.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Living Areas</span>
-                            </div>
-                            <ul>
-                                <li>Under furniture</li>
-                                <li>Under couch and chair cushions</li>
-                            </ul>
-                        </div>
-
-                        <div class="service" data-service="DC Windows & Doors">
-                            <div class="title">
-                                <div>
-                                    <img src="pictures/Services/Window.svg">
-                                    <div class="circle"></div>
-                                </div>
-                                <span>Windows & Doors</span>
-                            </div>
-                            <ul>
-                                <li>Window blinds</li>
-                                <li>Window tracks</li>
-                                <li>Window panes</li>
-                                <li>Doors</li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
             </div>
             
             <!-- Fully Insured -->
             <div id="FullyInsured">
                 <img src="pictures/Fully_Insured.svg">
-                Fully insured for your peace of mind
+                <!-- Fully insured for your peace of mind -->
             </div>
         </div>
 
         <!-- Promotion -->
         <div id="Promotion">
-            <div>
+            <!-- <div>
                 <h2>Spook-Free Clean</h2>
                 <span>Valid from 10/1/2025 - 10/31/2025</span>
             </div>            
             <span id="p_description">
                 New customers save $15 on their first deep clean.
             </span>
-            <img src="pictures/dArrow.svg">
+            
+            <img src="pictures/dArrow.svg"> -->
         </div>
 
         <!-- Form -->
@@ -341,31 +180,19 @@
 
         <!-- Picture -->
         <div id="Picture">
-            <img src="pictures/img-carousel/1000016414.jpg">            
-            <!-- <div class="img-carousel">
-                <div id="imgCarousel">
-                </div>
-                <button style="left: 5px" onclick="carousel(-1)">&#10094;</button>
-                <button style="right: 5px" onclick="carousel(1)">&#10095;</button>
-            </div>
-             -->
-            <!-- <div class="carousel-decor">
-                <img src="pictures/gloves.png" class="gloves">
-                <img src="pictures/broom.png" class="broom">
-            </div> -->
-
+            <img id="SecondPicture" src="pictures/img-carousel/1000016414.jpg">   
         </div>
 
         <!-- Footer -->
         <div id="Footer">
             <div class="logo_social">
                 <div class="logo">
-                    <img src="pictures/AC_Logo.svg">
+                    <img id="Official_Logo_C" src="pictures/AC_Logo.svg">
                 </div>
-                <a href="https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank">
+                <a id="Instagram" href="https://www.instagram.com/always_clean_1123?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" target="_blank">
                     <img class="instagram" src="pictures/Footer/Instagram 2.svg">
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100092655759980" target="_blank">
+                <a id="Facebook" href="https://www.facebook.com/profile.php?id=100092655759980" target="_blank">
                     <img class="facebook" src="pictures/Footer/Facebook.svg">
                 </a>
             </div>
