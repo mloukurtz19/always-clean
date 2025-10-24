@@ -203,7 +203,7 @@ fetch("./data.json")
 
     // Fully Insured
     if(general["Fully Insured"] != undefined){
-        document.getElementById("FullyInsured").innerHTML = `<span>${general["Fully Insured"]}</span>`;
+        document.getElementById("FullyInsured").innerHTML = `<img src="./pictures/Fully_Insured.svg"><span>${general["Fully Insured"]}</span>`;
     }
 
     // Promotion
