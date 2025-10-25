@@ -1,7 +1,8 @@
 fetch("./data.json")
 .then(res => res.json())
 .then((contents) => {
-    let data = JSON.parse(contents["data"]);
+    // let data = JSON.parse(contents["data"]);
+    let data = typeof contents["data"] == "string" ? JSON.parse(contents["data"]) : contents["data"];
     let general = {};
 
     if(data["General"] != undefined){
