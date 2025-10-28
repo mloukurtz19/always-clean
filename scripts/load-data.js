@@ -161,7 +161,7 @@ fetch("./data.json")
         const services_html = (title, descriptors) => {
             console.log("Services HMTL");
             return `
-                <div class="service">
+                <div class="service" data-service="">
                     <div class="title">
                         <div>
                             <img src="${image_icon_srcs[title] != undefined ? image_icon_srcs[title] : './pictures/Services/Organization.svg'}">
