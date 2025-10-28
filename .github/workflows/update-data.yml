@@ -29,9 +29,10 @@ jobs:
         run: node scripts/update-data.js
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # default token works with read & write permissions
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update data.json from Google Sheets"
           branch: github-bot-update
           base: main
@@ -40,11 +41,12 @@ jobs:
           labels: automated
 
       - name: Auto-approve Pull Request
-        if: steps.cpr.outputs.pull-request-url != ''
-        uses: peter-evans/approve-pull-request@v3
+        if: steps.cpr.outputs.pull-request-number != ''
+        uses: hmarr/auto-approve-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable auto-merge
         if: steps.cpr.outputs.pull-request-url != ''
@@ -53,3 +55,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: merge
+
