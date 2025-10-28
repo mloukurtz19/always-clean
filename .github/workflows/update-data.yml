@@ -38,6 +38,18 @@ jobs:
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
           labels: automated
-          approve: true
-          merge: true
+
+      - name: Auto-approve Pull Request
+        if: steps.cpr.outputs.pull-request-url != ''
+        uses: peter-evans/approve-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-url != ''
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: merge
