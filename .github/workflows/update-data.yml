@@ -30,7 +30,7 @@ jobs:
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update data.json from Google Sheets"
@@ -39,4 +39,3 @@ jobs:
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
           labels: automated
-          sign-commits: true
