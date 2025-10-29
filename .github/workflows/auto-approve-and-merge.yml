@@ -1,8 +1,8 @@
 name: Auto Approve and Merge PRs
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  pull_request_target:
+    types: [labeled]
 
 permissions:
   contents: write
