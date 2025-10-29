@@ -38,4 +38,4 @@ jobs:
           base: main
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
-          labels: automated
+          labels: automerge
