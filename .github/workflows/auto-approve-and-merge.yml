@@ -11,7 +11,6 @@ permissions:
 jobs:
   approve-and-merge:
     # ✅ Only run for PRs created by your automation account
-    if: github.actor == 'github-actions[bot]' || github.actor == 'Flowers70'
     runs-on: ubuntu-latest
 
     steps:
