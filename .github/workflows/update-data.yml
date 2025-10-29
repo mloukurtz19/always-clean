@@ -32,10 +32,21 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.BOT_PAT }}
           commit-message: "Update data.json from Google Sheets"
           branch: github-bot-update
           base: main
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
           labels: automated
+
+      - name: Auto approve PR
+        uses: hmarr/auto-approve-action@v3
+        with:
+          github-token: ${{ secrets.BOT_PAT }}
+
+      - name: Auto merge PR
+        uses: pascalgn/automerge-action@v0.16.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+          MERGE_METHOD: merge
