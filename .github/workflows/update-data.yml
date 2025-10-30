@@ -4,14 +4,13 @@ on:
   schedule:
     - cron: "0 12 * * *"  # runs daily at 12:00 UTC
   workflow_dispatch:      # manual trigger in GitHub Actions tab
-
-permissions:
-  contents: write
-  pull-requests: write
   
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
@@ -39,14 +38,17 @@ jobs:
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
           labels: automated
+          update: true
 
       - name: Auto approve PR
-        uses: hmarr/auto-approve-action@v3
+        uses: hmarr/auto-approve-action@v4
         with:
-          github-token: ${{ secrets.BOT_PAT }}
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
 
       - name: Auto merge PR
-        uses: pascalgn/automerge-action@v0.16.3
-        env:
+        uses: pascalgn/automerge-action@v0.16.4
+        with:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
           MERGE_METHOD: merge
+          PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
