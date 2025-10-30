@@ -38,7 +38,6 @@ jobs:
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
           labels: automated
-          update: true
 
       - name: Auto approve PR
         uses: hmarr/auto-approve-action@v4
@@ -48,7 +47,7 @@ jobs:
 
       - name: Auto merge PR
         uses: pascalgn/automerge-action@v0.16.4
-        with:
-          github-token: ${{ secrets.BOT_PAT }}
-          merge-method: merge
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+          MERGE_METHOD: merge
+          PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
