@@ -37,12 +37,7 @@ jobs:
           base: main
           title: "Update data.json"
           body: "Automated update of data.json from Google Sheets."
-<<<<<<< Updated upstream
-          labels: automated
-=======
           labels: automerge
-          update: true
->>>>>>> Stashed changes
 
       - name: Auto approve PR
         uses: hmarr/auto-approve-action@v4
