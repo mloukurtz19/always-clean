@@ -53,7 +53,7 @@ submitButton.addEventListener("click", (event) => {
             preferred_date.value.trim().length == 0 || preferred_time.value.trim().length == 0 ||
             address.value.trim().length == 0)){
                 // Ready for submission!
-                grecaptcha.execute();
+                await grecaptcha.execute();
                 quoteForm.submit();
                 alert("Submission Successful!");
                 submitButton.className="submitted";
