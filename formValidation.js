@@ -1,4 +1,4 @@
-const quoteForm = document.getElementById("Form");
+const quoteForm = document.getElementById("FormA");
 const submitButton = document.getElementById("submit-button");
 
 const full_name = document.getElementById("full_name");
@@ -55,6 +55,9 @@ submitButton.addEventListener("click", (event) => {
                 // Ready for submission!
                 grecaptcha.execute();
                 quoteForm.submit();
+                alert("Submission Successful!");
+                submitButton.className="submitted";
+                submitButton.disabled = true;
         }else{
             alert("Please ensure all required fields are filled.");
         }
