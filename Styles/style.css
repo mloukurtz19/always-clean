@@ -12,6 +12,11 @@
     color: var(--blue-text);
 }
 
+.submitted, #submit-button:disabled{
+    pointer-events: none;
+    opacity: 0.75;
+}
+
 html{
     scroll-behavior: smooth;
 }
