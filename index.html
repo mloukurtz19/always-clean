@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,7 +124,7 @@
 
         <!-- Form -->
         <div id="Form" class="bubbles">            
-            <form id="FormA" action="https://formspree.io/f/xzzgdqon" method="POST">
+            <form id="FormA" action="https://formspree.io/f/xzzgdqon" onsubmit="return formValidationSubmission(event)" method="POST">
                 <img src="./pictures/Decorative_Line.svg" class="decorative-line">
                 <h2>Request a Quote</h2>
 
@@ -162,13 +163,12 @@
                         <label for="additional_details"><span class="invalid">INVALID </span>Additional Details (optional)</label>
                         <textarea id="additional_details" maxlength="500"></textarea>
                     </div>
-                    <div class="g-recaptcha" 
-                        data-sitekey="6LfVx2grAAAAALp2RlKIqIfCKg2j_1ehtIncE4l8"
-                        data-callback="onSubmit"
-                        data-size="invisible">
-                    </div> 
+                    <button id="submit-button" 
+                    class="g-recaptcha" 
+                    data-sitekey="6LezVf0rAAAAAOnQCIQemKHbt4dkKOYidDocNdUv" 
+                    data-callback="onSubmit"></button>
                                    
-                    <button id="submit-button" type="submit">Get a Free Quote</button>
+                    <!-- <button id="submit-button" type="submit" value="Submit">Get a Free Quote</button> -->
                     <div class="recaptcha-policy">
                         This site is protected by reCAPTCHA and the Google
                         <a href="https://policies.google.com/privacy">Privacy Policy</a> and

@@ -40,8 +40,8 @@ const minDate = `${year}-${month}-${day}`;
 
 preferred_date.setAttribute('min', minDate);
 
-submitButton.addEventListener("click", (event) => {
-    event.preventDefault();
+function onSubmit(token){
+    // event.preventDefault();
     console.log("Form Submission");
 
     if(full_name.value.match(/^[a-zA-Z]+([ '-][a-zA-Z]+)*$/gm) &&
@@ -52,14 +52,9 @@ submitButton.addEventListener("click", (event) => {
         if(!(full_name.value.trim().length == 0 || email.value.trim().length == 0 ||
             preferred_date.value.trim().length == 0 || preferred_time.value.trim().length == 0 ||
             address.value.trim().length == 0)){
-                // Ready for submission!
-                grecaptcha.execute().then(() => {
-                    console.log("RECAPTCHA Success!!!");
-                    quoteForm.submit();
-                    alert("Submission Successful!");
-                    submitButton.className="submitted";
-                    submitButton.disabled = true;
-                })                
+
+                console.log("Valid Form Contents");
+                quoteForm.submit();               
         }else{
             alert("Please ensure all required fields are filled.");
         }
@@ -77,7 +72,7 @@ submitButton.addEventListener("click", (event) => {
         "Additional Details", additional_details.value + "\n"
     );
 
-})
+}
 
 function goToQuote(){
     let quoteSection = document.getElementById("Form");
