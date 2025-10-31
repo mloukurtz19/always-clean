@@ -53,11 +53,13 @@ submitButton.addEventListener("click", (event) => {
             preferred_date.value.trim().length == 0 || preferred_time.value.trim().length == 0 ||
             address.value.trim().length == 0)){
                 // Ready for submission!
-                await grecaptcha.execute();
-                quoteForm.submit();
-                alert("Submission Successful!");
-                submitButton.className="submitted";
-                submitButton.disabled = true;
+                grecaptcha.execute().then(() => {
+                    console.log("RECAPTCHA Success!!!");
+                    quoteForm.submit();
+                    alert("Submission Successful!");
+                    submitButton.className="submitted";
+                    submitButton.disabled = true;
+                })                
         }else{
             alert("Please ensure all required fields are filled.");
         }
