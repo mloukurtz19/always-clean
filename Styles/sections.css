@@ -1,33 +1,44 @@
 @import url(constants.css);
 
 /* Header */
-.hero{
+.hero {
     display: contents;
 }
 
-h1{
+h1 {
     font-size: 2rem;
 }
 
-header{
-    height: var(--header-height); 
+header {
+    /* height: var(--header-height);  */
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1000;
     box-sizing: border-box;
     position: relative;
 
-    padding-left: 2.5em;
+    /* padding-left: 2.5em; */
 }
 
-header img{
+.announcement-bar {
+    background-color: var(--pink);
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+header img {
     height: 100%;
     margin-right: 0.5rem;
 }
 
-.blue-header{
+.blue-header {
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,7 +46,8 @@ header img{
     background-color: var(--white);
 
     /* border-bottom-left-radius: 10px; */
-    padding-left: 0.125em; /* 2px */
+    padding-left: 2.625em;
+    /* 2px */
     position: relative;
     /* border-bottom-left-radius: 2.5em;
     border-top-left-radius: 2.5em; */
@@ -55,7 +67,7 @@ header img{
 
 /* About Me */
 
-.about-me{
+.about-me {
     height: var(--remaining-space-total);
     width: 100%;
     display: flex;
@@ -69,16 +81,16 @@ header img{
     padding-top: 2rem;
 }
 
-.about-me h2{
+.about-me h2 {
     white-space: normal;
     overflow: hidden;
 }
 
-.about-img{
+.about-img {
     aspect-ratio: 1/1;
     height: 100%;
     max-width: 50%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +98,7 @@ header img{
     box-sizing: border-box;
 }
 
-.image-cropper{
+.image-cropper {
     position: relative;
     height: 100%;
     width: 100%;
@@ -99,7 +111,7 @@ header img{
     box-shadow: -15px 15px var(--pink);
 }
 
-.image-cropper img{
+.image-cropper img {
     aspect-ratio: 1/1;
     object-fit: cover;
     display: inline;
@@ -107,20 +119,20 @@ header img{
     width: 100%;
 }
 
-.about-me .content{
+.about-me .content {
     /* margin: 2em; */
     font-size: 1.7rem;
     line-height: 2;
     max-width: 45rem;
 }
 
-.about-me div:nth-child(2){
+.about-me div:nth-child(2) {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.about-me div:nth-child(2) button{
+.about-me div:nth-child(2) button {
     width: 100%;
     background-color: var(--pink);
     color: var(--white);
@@ -130,26 +142,26 @@ header img{
     border-radius: 9999px;
 }
 
-button{
+button {
     transition: 0.3s transform ease;
 }
 
-button:focus-visible{
+button:focus-visible {
     outline: none;
     transform: scale(1.03);
 }
 
-button:hover{
+button:hover {
     transform: scale(1.03);
 }
 
-.about-me div:nth-child(2){
+.about-me div:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Testimonials Section */
 
-#Testimonials{
+#Testimonials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +170,7 @@ button:hover{
     padding: 2rem 0 2rem 0;
 }
 
-#Testimonials .testimonial-list{
+#Testimonials .testimonial-list {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -171,11 +183,11 @@ button:hover{
     display: none;
 }
 
-.testimonial-list.scrolling{
+.testimonial-list.scrolling {
     cursor: pointer;
 }
 
-#Testimonials .testimony{
+#Testimonials .testimony {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,11 +196,11 @@ button:hover{
     user-select: none;
 }
 
-#Testimonials .testimony > div:first-of-type{
+#Testimonials .testimony>div:first-of-type {
     padding: 0 1rem;
 }
 
-#Testimonials .testimony-section{
+#Testimonials .testimony-section {
     max-width: 700px;
     text-align: center;
     font-size: 1rem;
@@ -198,26 +210,26 @@ button:hover{
 }
 
 
-#Testimonials .rightQuote{
+#Testimonials .rightQuote {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#Testimonials .rightQuote img{
+#Testimonials .rightQuote img {
     transform: rotate(180deg);
 }
 
-#Testimonials .nav{
+#Testimonials .nav {
     display: flex;
     gap: 1rem;
 }
 
-#Testimonials .nav img{
+#Testimonials .nav img {
     cursor: pointer;
 }
 
 /* Services Section */
-#Services{
+#Services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,7 +239,7 @@ button:hover{
     gap: 1rem;
 }
 
-#Services .container{
+#Services .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,7 +249,7 @@ button:hover{
     padding: 0 1rem 0 1rem;
 }
 
-#Services .card{
+#Services .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,13 +261,13 @@ button:hover{
     padding: 0 1rem 1rem 1rem
 }
 
-#Services .card .name{
+#Services .card .name {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#Services .card h3{
+#Services .card h3 {
     color: var(--pink-text);
     font-weight: bold;
     font-size: 1.5rem;
@@ -263,26 +275,26 @@ button:hover{
     margin: 0;
 }
 
-#Services .card .content{
+#Services .card .content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
 }
 
-.service{
+.service {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
 }
 
-.service ul{
+.service ul {
     padding-left: 1rem;
     line-height: 1.5rem;
 }
 
-.service .title{
+.service .title {
     display: flex;
     flex-direction: column;
 
@@ -292,25 +304,26 @@ button:hover{
     font-weight: bold;
 }
 
-.service .title div{
+.service .title div {
     height: 90px;
     width: 90px;
     position: relative;
 }
 
-.service .title div img, #Services .card .circle{
+.service .title div img,
+#Services .card .circle {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.service .title div img{
+.service .title div img {
     z-index: 2;
     height: 90px;
     width: 90px;
 }
 
-.service .circle{
+.service .circle {
     z-index: 1;
     height: 90px;
     width: 90px;
@@ -319,7 +332,7 @@ button:hover{
 }
 
 /* Fully Insured */
-#FullyInsured{
+#FullyInsured {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,14 +345,14 @@ button:hover{
     font-weight: 600;
 }
 
-#FullyInsured img{
+#FullyInsured img {
     width: 10.9375rem;
     height: 10.9375rem;
 }
 
 /* Promotion */
 
-#Promotion{
+#Promotion {
     display: flex;
     flex-direction: column;
 
@@ -351,53 +364,53 @@ button:hover{
     color: var(--white);
 }
 
-#Promotion h2{
+#Promotion h2 {
     color: var(--white);
     line-height: 2.5rem;
 }
 
-#Promotion div{
+#Promotion div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#Promotion span{
+#Promotion span {
     line-height: 1.25rem;
     font-weight: bold;
 }
 
-#Promotion div span{
+#Promotion div span {
     opacity: 0.8;
 }
 
 /* Form */
-.invalid{
+.invalid {
     display: none;
     color: red;
     font-weight: bold;
 }
 
-.invalid.error{
+.invalid.error {
     display: block;
 }
 
-input.error{
+input.error {
     border-color: red !important;
 }
 
-input.error:focus-visible{
+input.error:focus-visible {
     outline: 0;
 }
 
-#Form{
+#Form {
     display: flex;
     padding: 2rem 0 2rem 0;
     align-items: center;
     justify-content: center;
 }
 
-#Form form{
+#Form form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -408,44 +421,45 @@ input.error:focus-visible{
     background-color: var(--white);
 }
 
-#Form .form{
+#Form .form {
     display: flex;
     flex-direction: column;
 
     gap: 0.5rem;
     width: 700px;
-    
+
 }
 
-#Form .form .row{
+#Form .form .row {
     display: flex;
     gap: 2rem;
 }
 
-#Form .form .row.lastrow{
+#Form .form .row.lastrow {
     flex-direction: column;
     gap: 0;
 }
 
-#Form .form .column{
+#Form .form .column {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#Form .form label{
+#Form .form label {
     display: flex;
     align-items: center;
     height: 2.5rem;
     gap: 5px;
 }
 
-#Form .form img{
+#Form .form img {
     width: 1rem;
     height: 1rem;
 }
 
-#Form input, #Form textarea{
+#Form input,
+#Form textarea {
     height: 2.8125rem;
     width: 100%;
     box-sizing: border-box;
@@ -461,16 +475,17 @@ input.error:focus-visible{
     padding-right: 5px;
 }
 
-#Form textarea{
+#Form textarea {
     box-sizing: border-box;
     padding: 0.5rem;
 }
 
-#Form input:focus, #Form textarea:focus{
+#Form input:focus,
+#Form textarea:focus {
     outline-color: var(--blue-text);
 }
 
-#Form button{
+#Form button {
     height: 2.8125rem;
     background-color: var(--pink);
     color: var(--white);
@@ -483,7 +498,7 @@ input.error:focus-visible{
 
 /* Picture */
 
-#Picture{
+#Picture {
     display: flex;
     width: 100%;
     /* height: 60vh; */
@@ -491,7 +506,7 @@ input.error:focus-visible{
     padding: 2rem 0 2rem 0;
 }
 
-#Picture img{
+#Picture img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
@@ -499,7 +514,7 @@ input.error:focus-visible{
 
 /* Footer */
 
-#Footer{
+#Footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,12 +522,12 @@ input.error:focus-visible{
 
     gap: 0.5rem;
     padding: 2rem 0 2rem 0;
-    
+
     background-color: var(--blue-text);
     color: var(--white);
 }
 
-#Footer .logo_social{
+#Footer .logo_social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -520,7 +535,7 @@ input.error:focus-visible{
     gap: 2rem;
 }
 
-#Footer .logo{
+#Footer .logo {
     display: flex;
     width: 80px;
     height: 80px;
@@ -529,17 +544,17 @@ input.error:focus-visible{
     border-radius: 9999px;
 }
 
-#Footer .instagram{
+#Footer .instagram {
     width: 50px;
     height: 50px;
 }
 
-#Footer .facebook{
+#Footer .facebook {
     width: 48px;
     height: 48px;
 }
 
-#Footer .contact{
+#Footer .contact {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -548,10 +563,10 @@ input.error:focus-visible{
 }
 
 /* Popup */
-#Popup{
+#Popup {
     width: 100%;
     height: 100%;
-    background:rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
@@ -563,7 +578,7 @@ input.error:focus-visible{
     justify-content: center;
 }
 
-#Popup .container{
+#Popup .container {
     display: flex;
     flex-direction: column;
     background-color: var(--gray);
@@ -571,13 +586,13 @@ input.error:focus-visible{
     border-radius: 5px;
 }
 
-#Popup .close{
+#Popup .close {
     display: flex;
     flex-direction: row-reverse;
     cursor: default;
 }
 
-#Popup .close span{
+#Popup .close span {
     cursor: pointer;
     font-weight: bold;
 }
