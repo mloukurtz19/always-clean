@@ -1,103 +1,107 @@
 @import url(constants.css);
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 0;
     }
 
-    h1{
+    h1 {
         font-size: 2rem;
         text-align: center;
     }
 
-    h2{
+    h2 {
         text-align: center;
     }
 
-    .decorative-line{
+    .decorative-line {
         width: calc(100vw - 2rem);
         margin: 0;
         box-sizing: border-box;
     }
 
     /* Header */
-    .hero{
+    .hero {
         display: flex;
         flex-direction: column;
         height: auto;
         min-height: 100svh;
     }
 
-    header{
+    header {
         height: 100%;
         padding: 0;
     }
 
-    header img{
+    .announcement-bar {
+        line-height: 1.5;
+    }
+
+    header img {
         height: 80px;
         margin-right: 0;
     }
-    
-    .blue-header{
+
+    .blue-header {
         flex-direction: column;
         border: 0;
     }
 
     /* About */
-    .about-me{
+    .about-me {
         flex-direction: column-reverse;
         padding: 1rem;
         height: auto;
         flex: 1;
     }
 
-    .about-me div:nth-child(2) button{
+    .about-me div:nth-child(2) button {
         font-size: 1.25rem;
         line-height: 1;
     }
 
-    .about-me h2{
+    .about-me h2 {
         font-size: 1.25rem;
         line-height: 1.5;
         text-align: center;
     }
 
-    .about-me .content{
+    .about-me .content {
         font-size: 1rem;
         line-height: 2;
     }
 
-    .about-img{
+    .about-img {
         max-width: 100%;
         margin-bottom: 8px;
     }
 
-    .image-cropper{
+    .image-cropper {
         box-shadow: -8px 8px var(--pink);
     }
 
-    .about-me div:nth-child(2){
+    .about-me div:nth-child(2) {
         align-items: center;
         gap: 1rem;
     }
 
     /* Testimonials */
-    .testimony{
+    .testimony {
         padding: 0 1rem 0 1rem;
     }
 
-    .testimony-section{
+    .testimony-section {
         width: calc(100% - 3rem) !important;
         text-align: center !important;
     }
 
     /* Services */
-    #Services .card .content{
+    #Services .card .content {
         flex-wrap: wrap;
     }
 
-    #Services .card .content ul{
+    #Services .card .content ul {
         display: none;
     }
 
@@ -107,40 +111,40 @@
     }
 
     /* Fully Insured */
-    #FullyInsured{
+    #FullyInsured {
         flex-direction: column;
         text-align: center;
     }
 
     /* Promotions */
-    #Promotion{
+    #Promotion {
         text-align: center;
     }
 
-    #Promotion h2{
+    #Promotion h2 {
         text-align: center;
     }
 
-    #Promotion div{
+    #Promotion div {
         gap: 0.5rem;
     }
 
     /* Form */
-    #Form .form{
+    #Form .form {
         width: 100% !important;
     }
 
-    #Form .form .row{
+    #Form .form .row {
         flex-direction: column;
         gap: 0.5rem;
     }
 
     /* Footer */
-    #Footer .logo_social{
+    #Footer .logo_social {
         flex-wrap: wrap;
     }
 
-    #Footer .contact{
+    #Footer .contact {
         gap: 1rem;
         flex-wrap: wrap;
     }
