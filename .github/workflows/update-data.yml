@@ -1,53 +1,53 @@
-name: Update data.json from Google Sheets
+# name: Update data.json from Google Sheets
 
-on:
-  schedule:
-    - cron: "0 12 * * *"  # runs daily at 12:00 UTC
-  workflow_dispatch:      # manual trigger in GitHub Actions tab
+# on:
+#   schedule:
+#     - cron: "0 12 * * *"  # runs daily at 12:00 UTC
+#   workflow_dispatch:      # manual trigger in GitHub Actions tab
   
-jobs:
-  update-data:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+# jobs:
+#   update-data:
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: write
+#       pull-requests: write
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+#       - name: Set up Node
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: 18
 
-      - name: Install dependencies
-        run: npm install node-fetch@2
+#       - name: Install dependencies
+#         run: npm install node-fetch@2
 
-      - name: Update data.json
-        run: node scripts/update-data.js
+#       - name: Update data.json
+#         run: node scripts/update-data.js
 
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update data.json from Google Sheets"
-          branch: github-bot-update
-          base: main
-          title: "Update data.json"
-          body: "Automated update of data.json from Google Sheets."
-          labels: automerge
+#       - name: Create Pull Request
+#         id: cpr
+#         uses: peter-evans/create-pull-request@v7
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           commit-message: "Update data.json from Google Sheets"
+#           branch: github-bot-update
+#           base: main
+#           title: "Update data.json"
+#           body: "Automated update of data.json from Google Sheets."
+#           labels: automerge
 
-      - name: Auto approve PR
-        uses: hmarr/auto-approve-action@v4
-        with:
-          github-token: ${{ secrets.BOT_PAT }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+#       - name: Auto approve PR
+#         uses: hmarr/auto-approve-action@v4
+#         with:
+#           github-token: ${{ secrets.BOT_PAT }}
+#           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
 
-      - name: Auto merge PR
-        uses: pascalgn/automerge-action@v0.16.4
-        env:
-          GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
-          MERGE_METHOD: merge
-          PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
+#       - name: Auto merge PR
+#         uses: pascalgn/automerge-action@v0.16.4
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
+#           MERGE_METHOD: merge
+#           PULL_REQUEST: ${{ steps.cpr.outputs.pull-request-number }}
